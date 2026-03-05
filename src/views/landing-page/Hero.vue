@@ -1,22 +1,28 @@
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
     data: {
         type: Object,
-        default: () => ({
-            title: 'El Cuidado que tu Mascota Merece',
-            subtitle: 'Bienestar y Salud Animal',
-            description: 'En Vet&Pet nos apasiona ver a tu compañero sano y feliz. Contamos con tecnología de punta y un equipo humano dedicado a brindarle la mejor atención médica y estética.',
-            image_url: null
-        })
+        default: () => null
     }
 })
 
-const benefits = [
-    'Atención Médica Especializada',
-    'Peluquería Canina de Alto Nivel',
-    'Recordatorios de Vacunación',
-    'Resultados de Exámenes Online',
-]
+const title = computed(() => props.data?.title || 'El Cuidado que tu Mascota Merece')
+const description = computed(() => props.data?.description || 'En Vet&Pet nos apasiona ver a tu compañero sano y feliz. Contamos con tecnología de punta y un equipo humano dedicado a brindarle la mejor atención médica y estética.')
+const imageUrl = computed(() => props.data?.image_url || 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=1200')
+
+const benefits = computed(() => {
+    if (props.data?.subtitle && props.data.subtitle.trim() !== '') {
+        return props.data.subtitle.split(',').map(s => s.trim()).filter(Boolean)
+    }
+    return [
+        'Atención Médica Especializada',
+        'Peluquería Canina de Alto Nivel',
+        'Recordatorios de Vacunación',
+        'Resultados de Exámenes Online',
+    ]
+})
 </script>
 
 <template>
@@ -31,12 +37,12 @@ const benefits = [
                 </div>
 
                 <h1 class="text-h1 font-weight-black mb-4 animate-up">
-                    {{ data.title }}
+                    {{ title }}
                 </h1>
 
                 <p class="text-h6 text-secondary mb-6 opacity-90 line-height-relaxed animate-up"
                     style="animation-delay: 0.1s">
-                    {{ data.description }}
+                    {{ description }}
                 </p>
 
                 <div class="advantages-list mb-8 animate-up" style="animation-delay: 0.2s">
@@ -78,7 +84,7 @@ const benefits = [
 
                     <!-- Main Image -->
                     <VImg
-                        :src="data.image_url || 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=1200'"
+                        :src="imageUrl"
                         class="hero-main-img" cover alt="Cuidado profesional de mascotas" />
                 </div>
             </VCol>

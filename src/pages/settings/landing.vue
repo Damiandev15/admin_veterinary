@@ -108,7 +108,11 @@ definePage({
         <VCol cols="12">
             <VCard title="Gestión de Landing Page">
                 <VCardText>
-                    <div class="d-flex justify-end mb-4">
+                    <div class="d-flex justify-space-between align-center mb-4">
+                        <div class="text-body-2 text-secondary">
+                          <strong>Keys comunes:</strong> <v-chip size="small" class="me-1">navbar</v-chip> <v-chip size="small" class="me-1">hero</v-chip> <v-chip size="small" class="me-1">feature1</v-chip> <v-chip size="small" class="me-1">cta</v-chip> <v-chip size="small">footer</v-chip><br>
+                          Usa <em>Subtítulo</em> para íconos (ej. <code>ri-heart-fill</code>). La imagen cargada reemplazará al ícono o fondo dependiento la sección.
+                        </div>
                         <VBtn color="primary" @click="openEdit()">Nueva Sección</VBtn>
                     </div>
 
@@ -167,7 +171,7 @@ definePage({
                             <VTextField v-model="editSection.order" label="Orden" type="number" />
                         </VCol>
                         <VCol cols="12">
-                            <VFileInput label="Imagen (Opcional)" @change="e => imageFile.value = e.target.files[0]"
+                            <VFileInput label="Imagen (Logo, Fondo, o Principal)" @change="e => imageFile.value = e.target.files[0]"
                                 accept="image/*" />
                         </VCol>
                     </VRow>

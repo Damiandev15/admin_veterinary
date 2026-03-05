@@ -116,12 +116,6 @@ export default [
       },
     ],
   },
-  {
-    title: 'Calendario',
-    icon: { icon: 'ri-calendar-line' },
-    permission: 'calendar',
-    to: 'medical-record-calendar',
-  },
 
   {
     title: 'Cirugías',

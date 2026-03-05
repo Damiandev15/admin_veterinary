@@ -1,5 +1,7 @@
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref, computed } from 'vue'
+
+defineProps({ data: Object })
 
 const isScrolled = ref(false)
 
@@ -21,9 +23,10 @@ onUnmounted(() => {
         :class="{ 'navbar-scrolled': isScrolled }">
         <div class="d-flex align-center gap-2 px-6 px-md-12">
             <div class="logo-container">
-                <VIcon icon="ri-nurse-fill" color="primary" size="32" />
+                <img v-if="data?.image_url" :src="data.image_url" style="width: 32px; height: 32px; object-fit: contain;" />
+                <VIcon v-else :icon="data?.subtitle || 'ri-nurse-fill'" color="primary" size="32" />
             </div>
-            <span class="logo-text text-h5 font-weight-black text-primary">Vet&Pet</span>
+            <span class="logo-text text-h5 font-weight-black text-primary">{{ data?.title || 'Vet&Pet' }}</span>
         </div>
 
         <div class="d-flex gap-4 align-center px-6 px-md-12">

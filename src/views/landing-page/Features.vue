@@ -1,7 +1,6 @@
 <script setup>
 defineProps({
     features: {
-        type: Array,
         default: () => [
             {
                 title: 'Medicina Preventiva',
@@ -43,7 +42,7 @@ defineProps({
             </div>
 
             <VRow>
-                <VCol v-for="(feat, idx) in features" :key="idx" cols="12" sm="6" md="3">
+                <VCol v-for="(feat, idx) in (features || defaultFeatures)" :key="idx" cols="12" sm="6" md="3">
                     <VCard flat class="feature-card pa-10 rounded-xl h-100 border text-center">
                         <div class="icon-box-outer mb-8 mx-auto">
                             <div class="icon-box" :class="`text-${feat.color || 'primary'}`">
