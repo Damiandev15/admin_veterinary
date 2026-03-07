@@ -1,62 +1,83 @@
 <script setup>
 defineProps({
-    features: {
-        default: () => [
-            {
-                title: 'Medicina Preventiva',
-                description: 'Vacunación, desparasitación y chequeos generales para una vida larga y saludable.',
-                icon: 'ri-shield-cross-line',
-                color: 'primary'
-            },
-            {
-                title: 'Peluquería & Spa',
-                description: 'Estética profesional con productos premium para que tu mascota brille siempre.',
-                icon: 'ri-scissors-cut-line',
-                color: 'success'
-            },
-            {
-                title: 'Atención 24 Horas',
-                description: 'Estamos siempre listos para atender urgencias con el mejor equipo médico.',
-                icon: 'ri-alarm-warning-line',
-                color: 'error'
-            },
-            {
-                title: 'Farmacia & Nutrición',
-                description: 'Encuentra los medicamentos y el alimento balanceado ideal para sus necesidades.',
-                icon: 'ri-capsule-line',
-                color: 'info'
-            }
-        ]
-    }
+  features: {
+    default: () => [
+      {
+        title: 'Medicina Preventiva',
+        description: 'Vacunación, desparasitación y chequeos generales para una vida larga y saludable.',
+        icon: 'ri-shield-cross-line',
+        color: 'primary',
+      },
+      {
+        title: 'Peluquería & Spa',
+        description: 'Estética profesional con productos premium para que tu mascota brille siempre.',
+        icon: 'ri-scissors-cut-line',
+        color: 'success',
+      },
+      {
+        title: 'Atención 24 Horas',
+        description: 'Estamos siempre listos para atender urgencias con el mejor equipo médico.',
+        icon: 'ri-alarm-warning-line',
+        color: 'error',
+      },
+      {
+        title: 'Farmacia & Nutrición',
+        description: 'Encuentra los medicamentos y el alimento balanceado ideal para sus necesidades.',
+        icon: 'ri-capsule-line',
+        color: 'info',
+      },
+    ],
+  },
 })
 </script>
 
 <template>
-    <section class="features-section py-24 pa-6 pa-md-16 bg-surface">
-        <div class="max-w-1200 mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-h2 font-weight-black mb-4">Nuestros Servicios</h2>
-                <p class="text-h5 opacity-70 max-w-700 mx-auto font-weight-light">
-                    Ofrecemos una atención integral pensando en la comodidad de tu mascota y tu tranquilidad.
-                </p>
+  <section class="features-section py-12 py-md-24 pa-4 pa-sm-6 pa-md-16 bg-surface">
+    <div class="max-w-1200 mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-h2 font-weight-black mb-4">
+          Nuestros Servicios
+        </h2>
+        <p class="text-h5 opacity-70 max-w-700 mx-auto font-weight-light">
+          Ofrecemos una atención integral pensando en la comodidad de tu mascota y tu tranquilidad.
+        </p>
+      </div>
+
+      <VRow>
+        <VCol
+          v-for="(feat, idx) in (features || defaultFeatures)"
+          :key="idx"
+          cols="12"
+          sm="6"
+          md="3"
+        >
+          <VCard
+            flat
+            class="feature-card pa-10 rounded-xl h-100 border text-center"
+          >
+            <div class="icon-box-outer mb-8 mx-auto">
+              <div
+                class="icon-box"
+                :class="`text-${feat.color || 'primary'}`"
+              >
+                <VIcon
+                  :icon="feat.icon || 'ri-star-line'"
+                  size="42"
+                />
+              </div>
             </div>
 
-            <VRow>
-                <VCol v-for="(feat, idx) in (features || defaultFeatures)" :key="idx" cols="12" sm="6" md="3">
-                    <VCard flat class="feature-card pa-10 rounded-xl h-100 border text-center">
-                        <div class="icon-box-outer mb-8 mx-auto">
-                            <div class="icon-box" :class="`text-${feat.color || 'primary'}`">
-                                <VIcon :icon="feat.icon || 'ri-star-line'" size="42" />
-                            </div>
-                        </div>
-
-                        <h3 class="text-h5 font-weight-bold mb-4">{{ feat.title }}</h3>
-                        <p class="text-body-1 opacity-80 line-height-relaxed">{{ feat.description }}</p>
-                    </VCard>
-                </VCol>
-            </VRow>
-        </div>
-    </section>
+            <h3 class="text-h5 font-weight-bold mb-4">
+              {{ feat.title }}
+            </h3>
+            <p class="text-body-1 opacity-80 line-height-relaxed">
+              {{ feat.description }}
+            </p>
+          </VCard>
+        </VCol>
+      </VRow>
+    </div>
+  </section>
 </template>
 
 <style scoped>
@@ -112,6 +133,19 @@ defineProps({
 @media (max-width: 960px) {
     .text-h2 {
         font-size: 2.2rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-h2 {
+        font-size: 1.8rem !important;
+    }
+    .feature-card {
+        padding: 1.5rem !important;
+    }
+    .icon-box {
+        width: 64px;
+        height: 64px;
     }
 }
 </style>

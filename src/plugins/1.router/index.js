@@ -12,6 +12,8 @@ function recursiveLayouts(route) {
 
   return setupLayouts([route])[0]
 }
+
+
 // http://localhost:5173/products
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,7 +31,7 @@ const router = createRouter({
         component: () => import('@/pages/roles-permisos/index.vue'),
         meta: {
           permisssion: 'list_rol',
-        }
+        },
       },
       {
         path: '/client-scheduling',
@@ -37,7 +39,7 @@ const router = createRouter({
         component: () => import('@/pages/client-scheduling/index.vue'),
         meta: {
           permisssion: 'all',
-        }
+        },
       },
       {
         path: '/pet/daily-list',
@@ -45,7 +47,7 @@ const router = createRouter({
         component: () => import('@/pages/pet/daily-list.vue'),
         meta: {
           permisssion: 'list_pet',
-        }
+        },
       },
       {
         path: '/pet/daily-add',
@@ -53,7 +55,7 @@ const router = createRouter({
         component: () => import('@/pages/pet/daily-add.vue'),
         meta: {
           permisssion: 'register_pet',
-        }
+        },
       },
       {
         path: '/pet/daily-edit/:id',
@@ -61,7 +63,7 @@ const router = createRouter({
         component: () => import('@/pages/pet/daily-edit/[id].vue'),
         meta: {
           permisssion: 'edit_pet',
-        }
+        },
       },
     ]].map(route => recursiveLayouts(route)),
   ],

@@ -1,5 +1,4 @@
 <script setup>
-
 const income_bruto_selected = ref({
   total_bruto_general: 0,
   percentage_not_payments: 0,
@@ -8,33 +7,36 @@ const income_bruto_selected = ref({
   total_not_payments: 0,
   total_payments: 0,
   variation_percentage: 0,
-});
+})
+
 const TotalIncomeBruto = async() => {
   try {
-    const resp =  await $api('/kpi_total_bruto',{
-        method: 'POST',
-        body:{},
-        onResponseError({response}){
-            console.log(response);
-        }
+    const resp =  await $api('/kpi_total_bruto', {
+      method: 'POST',
+      body: {},
+      onResponseError({ response }){
+        console.log(response)
+      },
     })
-    console.log(resp);
-    income_bruto_selected.value.total_bruto_general = resp.total_bruto_general;
-    income_bruto_selected.value.percentage_not_payments = resp.percentage_not_payments;
-    income_bruto_selected.value.percentage_payments = resp.percentage_payments;
-    income_bruto_selected.value.total_bruto_general_before = resp.total_bruto_general_before;
-    income_bruto_selected.value.total_not_payments = resp.total_not_payments;
-    income_bruto_selected.value.total_payments = resp.total_payments;
-    income_bruto_selected.value.variation_percentage = resp.variation_percentage;
+
+    console.log(resp)
+    income_bruto_selected.value.total_bruto_general = resp.total_bruto_general
+    income_bruto_selected.value.percentage_not_payments = resp.percentage_not_payments
+    income_bruto_selected.value.percentage_payments = resp.percentage_payments
+    income_bruto_selected.value.total_bruto_general_before = resp.total_bruto_general_before
+    income_bruto_selected.value.total_not_payments = resp.total_not_payments
+    income_bruto_selected.value.total_payments = resp.total_payments
+    income_bruto_selected.value.variation_percentage = resp.variation_percentage
   } catch (error) {
     console.log(error)
   }
 }
 
 onMounted(() => {
-  TotalIncomeBruto();
+  TotalIncomeBruto()
 })
 </script>
+
 <template>
   <VCard>
     <VCardText>
@@ -42,16 +44,22 @@ onMounted(() => {
         <div class="text-body-1">
           Total Bruto
         </div>
-        <div class="d-flex justify-center" v-if="income_bruto_selected.variation_percentage >= 0">
-          <span class="text-success">+{{income_bruto_selected.variation_percentage}}%</span>
+        <div
+          v-if="income_bruto_selected.variation_percentage >= 0"
+          class="d-flex justify-center"
+        >
+          <span class="text-success">+{{ income_bruto_selected.variation_percentage }}%</span>
           <VIcon
             icon="ri-arrow-up-s-line"
             color="success"
             size="20"
           />
         </div>
-        <div class="d-flex justify-center" v-if="income_bruto_selected.variation_percentage < 0">
-          <span class="text-error">{{income_bruto_selected.variation_percentage}}%</span>
+        <div
+          v-if="income_bruto_selected.variation_percentage < 0"
+          class="d-flex justify-center"
+        >
+          <span class="text-error">{{ income_bruto_selected.variation_percentage }}%</span>
           <VIcon
             icon="ri-arrow-down-s-line"
             color="success"
@@ -84,7 +92,7 @@ onMounted(() => {
             <span>Pagado</span>
           </div>
           <h4 class="text-h4 mb-2">
-            {{income_bruto_selected.percentage_payments}}%
+            {{ income_bruto_selected.percentage_payments }}%
           </h4>
           <div class="text-body-1">
             {{ income_bruto_selected.total_payments }} BS
@@ -131,7 +139,7 @@ onMounted(() => {
             </VAvatar>
           </div>
           <h4 class="text-h4 mb-2">
-            {{income_bruto_selected.percentage_not_payments}}%
+            {{ income_bruto_selected.percentage_not_payments }}%
           </h4>
           <div class="text-body-1">
             {{ income_bruto_selected.total_not_payments }} BS

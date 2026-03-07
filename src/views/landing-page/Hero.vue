@@ -2,10 +2,10 @@
 import { computed } from 'vue'
 
 const props = defineProps({
-    data: {
-        type: Object,
-        default: () => null
-    }
+  data: {
+    type: Object,
+    default: () => null,
+  },
 })
 
 const title = computed(() => props.data?.title || 'El Cuidado que tu Mascota Merece')
@@ -13,83 +13,134 @@ const description = computed(() => props.data?.description || 'En Vet&Pet nos ap
 const imageUrl = computed(() => props.data?.image_url || 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=1200')
 
 const benefits = computed(() => {
-    if (props.data?.subtitle && props.data.subtitle.trim() !== '') {
-        return props.data.subtitle.split(',').map(s => s.trim()).filter(Boolean)
-    }
-    return [
-        'Atención Médica Especializada',
-        'Peluquería Canina de Alto Nivel',
-        'Recordatorios de Vacunación',
-        'Resultados de Exámenes Online',
-    ]
+  if (props.data?.subtitle && props.data.subtitle.trim() !== '') {
+    return props.data.subtitle.split(',').map(s => s.trim()).filter(Boolean)
+  }
+  
+  return [
+    'Atención Médica Especializada',
+    'Peluquería Canina de Alto Nivel',
+    'Recordatorios de Vacunación',
+    'Resultados de Exámenes Online',
+  ]
 })
 </script>
 
 <template>
-    <section class="hero-section pa-6 pa-md-10 overflow-hidden position-relative pt-12">
-        <VRow align="center">
-            <VCol cols="12" md="7">
-                <div class="animate-up">
-                    <v-chip variant="tonal" color="primary" class="mb-4" density="comfortable">
-                        <VIcon icon="ri-heart-pulse-fill" size="14" class="me-2" />
-                        <span>Tu Mascota en las Mejores Manos</span>
-                    </v-chip>
-                </div>
+  <section class="hero-section pa-6 pa-md-10 overflow-hidden position-relative pt-12">
+    <VRow align="center">
+      <VCol
+        cols="12"
+        md="7"
+      >
+        <div class="animate-up">
+          <VChip
+            variant="tonal"
+            color="primary"
+            class="mb-4"
+            density="comfortable"
+          >
+            <VIcon
+              icon="ri-heart-pulse-fill"
+              size="14"
+              class="me-2"
+            />
+            <span>Tu Mascota en las Mejores Manos</span>
+          </VChip>
+        </div>
 
-                <h1 class="text-h1 font-weight-black mb-4 animate-up">
-                    {{ title }}
-                </h1>
+        <h1 class="text-h1 font-weight-black mb-4 animate-up">
+          {{ title }}
+        </h1>
 
-                <p class="text-h6 text-secondary mb-6 opacity-90 line-height-relaxed animate-up"
-                    style="animation-delay: 0.1s">
-                    {{ description }}
-                </p>
+        <p
+          class="text-h6 text-secondary mb-6 opacity-90 line-height-relaxed animate-up"
+          style="animation-delay: 0.1s"
+        >
+          {{ description }}
+        </p>
 
-                <div class="advantages-list mb-8 animate-up" style="animation-delay: 0.2s">
-                    <div v-for="adv in benefits" :key="adv" class="d-flex align-center gap-2 mb-2">
-                        <VIcon icon="ri-check-line" color="success" size="20" />
-                        <span class="text-body-1 font-weight-medium text-high-emphasis">{{ adv }}</span>
-                    </div>
-                </div>
+        <div
+          class="advantages-list mb-8 animate-up"
+          style="animation-delay: 0.2s"
+        >
+          <div
+            v-for="adv in benefits"
+            :key="adv"
+            class="d-flex align-center gap-2 mb-2"
+          >
+            <VIcon
+              icon="ri-check-line"
+              color="success"
+              size="20"
+            />
+            <span class="text-body-1 font-weight-medium text-high-emphasis">{{ adv }}</span>
+          </div>
+        </div>
 
-                <div class="d-flex flex-wrap gap-4 animate-up" style="animation-delay: 0.3s">
-                    <VBtn size="x-large" color="primary" rounded="xl" href="/cliente/register" elevation="4"
-                        class="px-8 font-weight-bold">
-                        Agendar una Cita
-                    </VBtn>
+        <div
+          class="d-flex flex-wrap gap-4 animate-up"
+          style="animation-delay: 0.3s"
+        >
+          <VBtn
+            size="x-large"
+            color="primary"
+            rounded="xl"
+            href="/cliente/register"
+            elevation="4"
+            class="px-8 font-weight-bold hero-btn"
+          >
+            Agendar una Cita
+          </VBtn>
 
-                    <VBtn size="x-large" variant="outlined" color="primary" rounded="xl"
-                        class="px-8 font-weight-medium">
-                        Ver Servicios
-                    </VBtn>
-                </div>
-            </VCol>
+          <VBtn
+            size="x-large"
+            variant="outlined"
+            color="primary"
+            rounded="xl"
+            class="px-8 font-weight-medium hero-btn"
+          >
+            Ver Servicios
+          </VBtn>
+        </div>
+      </VCol>
 
-            <VCol cols="12" md="5" class="d-flex justify-center mt-12 mt-md-0">
-                <div class="image-wrapper">
-                    <!-- Decorative Background Elements -->
-                    <div class="image-bg-glow"></div>
-                    <div class="image-dots"></div>
+      <VCol
+        cols="12"
+        md="5"
+        class="d-flex justify-center mt-12 mt-md-0"
+      >
+        <div class="image-wrapper">
+          <!-- Decorative Background Elements -->
+          <div class="image-bg-glow" />
+          <div class="image-dots" />
 
-                    <!-- Professional Floating Badge -->
-                    <div class="floating-badge d-flex align-center gap-2 pa-3">
-                        <div class="badge-icon">
-                            <VIcon icon="ri-shield-check-fill" color="primary" size="20" />
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="text-caption font-weight-bold line-height-1">Certificado</span>
-                            <span class="text-tiny opacity-70">Salud Protegida</span>
-                        </div>
-                    </div>
+          <!-- Professional Floating Badge -->
+          <div class="floating-badge d-flex align-center gap-2 pa-3">
+            <div class="badge-icon">
+              <VIcon
+                icon="ri-shield-check-fill"
+                color="primary"
+                size="20"
+              />
+            </div>
+            <div class="d-flex flex-column">
+              <span class="text-caption font-weight-bold line-height-1">Certificado</span>
+              <span class="text-tiny opacity-70">Salud Protegida</span>
+            </div>
+          </div>
 
-                    <!-- Main Image -->
-                    <VImg
-                        :src="imageUrl"
-                        class="hero-main-img" cover alt="Cuidado profesional de mascotas" />
-                </div>
-            </VCol>
-        </VRow>
-    </section>
+          <!-- Main Image -->
+          <VImg
+            :src="imageUrl"
+            class="hero-main-img"
+            cover
+            alt="Cuidado profesional de mascotas"
+          />
+        </div>
+      </VCol>
+    </VRow>
+  </section>
 </template>
 
 <style scoped>
@@ -216,6 +267,24 @@ const benefits = computed(() => {
 @media (max-width: 960px) {
     .text-h1 {
         font-size: 2.8rem !important;
+    }
+    .hero-section {
+        padding-top: 120px !important;
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-h1 {
+        font-size: 2.2rem !important;
+    }
+    .hero-btn {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .hero-section {
+        padding-top: 100px !important;
     }
 }
 

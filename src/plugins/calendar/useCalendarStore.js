@@ -31,8 +31,9 @@ export const useCalendarStore = defineStore('calendar', {
 
       if (error.value)
         return error.value
-      console.log(data);
-      return data.value.calendars.data;
+      console.log(data)
+      
+      return data.value.calendars.data
     },
     async addEvent(event) {
       await $api('/apps/calendar', {

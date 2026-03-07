@@ -33,7 +33,8 @@ const refForm = ref()
 
 // 👉 Event
 const event = ref(JSON.parse(JSON.stringify(props.event)))
-const state = ref(1);
+const state = ref(1)
+
 const resetEvent = () => {
   event.value = JSON.parse(JSON.stringify(props.event))
   nextTick(() => {
@@ -41,8 +42,8 @@ const resetEvent = () => {
   })
 }
 
-watch(event, (new_event) => {
-  state.value = new_event.extendedProps.state;
+watch(event, new_event => {
+  state.value = new_event.extendedProps.state
 })
 watch(() => props.isDrawerOpen, resetEvent)
 
@@ -134,13 +135,20 @@ const dialogModelValueUpdate = val => {
 </script>
 
 <template>
-  <VNavigationDrawer temporary location="end" :model-value="props.isDrawerOpen" width="420" class="scrollable-content"
-    border="none" @update:model-value="dialogModelValueUpdate">
+  <VNavigationDrawer
+    temporary
+    location="end"
+    :model-value="props.isDrawerOpen"
+    width="420"
+    class="scrollable-content"
+    border="none"
+    @update:model-value="dialogModelValueUpdate"
+  >
     <!-- 👉 Header -->
-    <AppDrawerHeaderSection :title="event.id ? 'Update Appointment' : 'Add Event'"
-      @cancel="$emit('update:isDrawerOpen', false)">
-
-    </AppDrawerHeaderSection>
+    <AppDrawerHeaderSection
+      :title="event.id ? 'Update Appointment' : 'Add Event'"
+      @cancel="$emit('update:isDrawerOpen', false)"
+    />
 
     <VDivider />
 
@@ -148,63 +156,109 @@ const dialogModelValueUpdate = val => {
       <VCard flat>
         <VCardText>
           <!-- SECTION Form -->
-          <VForm ref="refForm" @submit.prevent="handleSubmit">
+          <VForm
+            ref="refForm"
+            @submit.prevent="handleSubmit"
+          >
             <VRow>
               <!-- 👉 Title -->
               <VCol cols="12">
-                <VTextField v-model="event.extendedProps.pet.name" label="Mascota" placeholder=""
-                  :rules="[requiredValidator]" readonly />
+                <VTextField
+                  v-model="event.extendedProps.pet.name"
+                  label="Mascota"
+                  placeholder=""
+                  :rules="[requiredValidator]"
+                  readonly
+                />
               </VCol>
 
               <VCol cols="12">
-                <VTextField v-model="event.extendedProps.veterinarie.full_name" label="Veterinario"
-                  placeholder="Meeting room" readonly />
+                <VTextField
+                  v-model="event.extendedProps.veterinarie.full_name"
+                  label="Veterinario"
+                  placeholder="Meeting room"
+                  readonly
+                />
               </VCol>
 
               <!-- 👉 Start date -->
               <VCol cols="12">
-                <AppDateTimePicker :key="JSON.stringify(startDateTimePickerConfig)" v-model="event.start"
-                  :rules="[requiredValidator]" label="Hora de atención" placeholder="Select Date"
-                  :config="startDateTimePickerConfig" disabled />
+                <AppDateTimePicker
+                  :key="JSON.stringify(startDateTimePickerConfig)"
+                  v-model="event.start"
+                  :rules="[requiredValidator]"
+                  label="Hora de atención"
+                  placeholder="Select Date"
+                  :config="startDateTimePickerConfig"
+                  disabled
+                />
               </VCol>
               <VCol cols="6">
-                <VTextField v-model="event.extendedProps.day" label="Dia" placeholder="" readonly />
+                <VTextField
+                  v-model="event.extendedProps.day"
+                  label="Dia"
+                  placeholder=""
+                  readonly
+                />
               </VCol>
               <VCol cols="6">
-                <VTextField v-model="event.extendedProps.amount" label="Costo de la cita" placeholder="" readonly />
+                <VTextField
+                  v-model="event.extendedProps.amount"
+                  label="Costo de la cita"
+                  placeholder=""
+                  readonly
+                />
               </VCol>
               <VCol cols="12">
-                <VSelect :items="[
-                  {
-                    name: 'Pendiente',
-                    id: 1,
-                  },
-                  {
-                    name: 'Cancelado',
-                    id: 2,
-                  },
-                  {
-                    name: 'Atendido',
-                    id: 3,
-                  }
-                ]" v-model="event.extendedProps.state" item-title="name" item-value="id" placeholder="Select Estado"
-                  eager readonly />
+                <VSelect
+                  v-model="event.extendedProps.state"
+                  :items="[
+                    {
+                      name: 'Pendiente',
+                      id: 1,
+                    },
+                    {
+                      name: 'Cancelado',
+                      id: 2,
+                    },
+                    {
+                      name: 'Atendido',
+                      id: 3,
+                    }
+                  ]"
+                  item-title="name"
+                  item-value="id"
+                  placeholder="Select Estado"
+                  eager
+                  readonly
+                />
               </VCol>
 
               <VCol cols="12">
-                <VTextarea v-model="event.extendedProps.description" label="Razon:"
-                  placeholder="Razon de la cita medica" readonly />
+                <VTextarea
+                  v-model="event.extendedProps.description"
+                  label="Razon:"
+                  placeholder="Razon de la cita medica"
+                  readonly
+                />
               </VCol>
 
               <VCol cols="12">
-                <VTextarea v-model="event.extendedProps.notes" label="Nota:" placeholder="Razon de la cita medica"
-                  readonly />
+                <VTextarea
+                  v-model="event.extendedProps.notes"
+                  label="Nota:"
+                  placeholder="Razon de la cita medica"
+                  readonly
+                />
               </VCol>
 
               <!-- 👉 Form buttons -->
               <VCol cols="12">
-
-                <VBtn variant="outlined" color="secondary" @click="onCancel">
+                <VBtn
+                  variant="outlined"
+                  color="secondary"
+                  @click="onCancel"
+                >
                   Cancel
                 </VBtn>
               </VCol>

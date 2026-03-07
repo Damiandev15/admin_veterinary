@@ -29,8 +29,14 @@ watch([
   <HorizontalNavLayout :nav-items="navItems">
     <!-- 👉 navbar -->
     <template #navbar>
-      <RouterLink to="/" class="app-logo">
-        <VNodeRenderer v-if="themeConfig.app.logo" :nodes="themeConfig.app.logo" />
+      <RouterLink
+        to="/"
+        class="app-logo"
+      >
+        <VNodeRenderer
+          v-if="themeConfig.app.logo"
+          :nodes="themeConfig.app.logo"
+        />
 
         <h1 class="app-logo-title leading-normal">
           {{ themeConfig.app.title }}
@@ -38,8 +44,10 @@ watch([
       </RouterLink>
       <VSpacer />
 
-      <NavBarI18n v-if="themeConfig.app.i18n.enable && themeConfig.app.i18n.langConfig?.length"
-        :languages="themeConfig.app.i18n.langConfig" />
+      <NavBarI18n
+        v-if="themeConfig.app.i18n.enable && themeConfig.app.i18n.langConfig?.length"
+        :languages="themeConfig.app.i18n.langConfig"
+      />
 
       <NavbarThemeSwitcher class="me-2" />
       <UserProfile />
@@ -49,7 +57,11 @@ watch([
 
     <!-- 👉 Pages -->
     <RouterView v-slot="{ Component }">
-      <Suspense :timeout="0" @fallback="isFallbackStateActive = true" @resolve="isFallbackStateActive = false">
+      <Suspense
+        :timeout="0"
+        @fallback="isFallbackStateActive = true"
+        @resolve="isFallbackStateActive = false"
+      >
         <Component :is="Component" />
       </Suspense>
     </RouterView>

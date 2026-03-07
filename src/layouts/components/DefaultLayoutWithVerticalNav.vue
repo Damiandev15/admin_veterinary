@@ -41,56 +41,64 @@ watch([
     verticalNavHeaderActionAnimationName.value = val[0] ? 'rotate-180' : 'rotate-back-180'
 }, { immediate: true })
 
-const navItemsV = ref([]);
+const navItemsV = ref([])
+
 onMounted(() => {
-  let USER = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null;
+  let USER = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null
   if (USER) {
-    console.log(USER);
+    console.log(USER)
+
     // LA LISTA DE PERMISOS DEL USUARIO AUTENTICADO
-    let permissions = USER.permissions;
-    navItems.forEach((nav) => {
+    let permissions = USER.permissions
+    navItems.forEach(nav => {
       // VAMOS A VALIDAR SI EL USUARIO ES SUPER-ADMIN
       if (USER.role.name == 'Super-Admin') {
-        navItemsV.value.push(nav);
+        navItemsV.value.push(nav)
       } else {
         // LOS NAV QUE TENGA EL PERMISO ALL PUEDE SER VISTO POR CUALQUIER USUARIO
         if (nav.permission == "all") {
-          navItemsV.value.push(nav);
+          navItemsV.value.push(nav)
         }
         if (nav.heading) {
           // FILTRAMOS LOS PERMISOS QUE SE NECESITA PARA VER ESE HEADING
-          let headingP = nav.permissions.filter((permission) => {
+          let headingP = nav.permissions.filter(permission => {
             if (permissions.includes(permission)) {
-              return true;
+              return true
             }
-            return false;
+            
+            return false
           })
+
           // SI TENEMOS ALMENOS UN PERMISO PUEDE VERSE EL HEADING
           if (headingP.length > 0) {
-            navItemsV.value.push(nav);
+            navItemsV.value.push(nav)
           }
         }
+
         // SI EL NAV TIENE SUBMENUS
         if (nav.children) {
-          let navT = nav;
+          let navT = nav
+
           // FILTRAMOS SI LOS SUBMENUS PUEDEN SER VISTO CON LOS PERMISOS DEL USUARIO AUTENTICADO
-          let newChildren = nav.children.filter((subnav) => {
+          let newChildren = nav.children.filter(subnav => {
             if (permissions.includes(subnav.permission)) {
-              return true;
+              return true
             }
-            return false;
-          });
+            
+            return false
+          })
+
           // ASIGNACIÓN DE LOS NUEVOS SUBMENUS
-          navT.children = newChildren;
-          navItemsV.value.push(navT);
+          navT.children = newChildren
+          navItemsV.value.push(navT)
         } else {
           // VERIFICAMOS SI LOS PERMISOS DE USUARIO PUEDEN VER LA OPCION DE NAVEGACION
           if (permissions.includes(nav.permission)) {
-            navItemsV.value.push(nav);
+            navItemsV.value.push(nav)
           }
         }
       }
-    });
+    })
   }
 })
 </script>
@@ -100,7 +108,11 @@ onMounted(() => {
     <!-- 👉 navbar -->
     <template #navbar="{ toggleVerticalOverlayNavActive }">
       <div class="d-flex h-100 align-center">
-        <IconBtn id="vertical-nav-toggle-btn" class="ms-n2 d-lg-none" @click="toggleVerticalOverlayNavActive(true)">
+        <IconBtn
+          id="vertical-nav-toggle-btn"
+          class="ms-n2 d-lg-none"
+          @click="toggleVerticalOverlayNavActive(true)"
+        >
           <VIcon icon="ri-menu-line" />
         </IconBtn>
 
@@ -108,8 +120,10 @@ onMounted(() => {
 
         <VSpacer />
 
-        <NavBarI18n v-if="themeConfig.app.i18n.enable && themeConfig.app.i18n.langConfig?.length"
-          :languages="themeConfig.app.i18n.langConfig" />
+        <NavBarI18n
+          v-if="themeConfig.app.i18n.enable && themeConfig.app.i18n.langConfig?.length"
+          :languages="themeConfig.app.i18n.langConfig"
+        />
         <UserProfile />
       </div>
     </template>
@@ -118,7 +132,11 @@ onMounted(() => {
 
     <!-- 👉 Pages -->
     <RouterView v-slot="{ Component }">
-      <Suspense :timeout="0" @fallback="isFallbackStateActive = true" @resolve="isFallbackStateActive = false">
+      <Suspense
+        :timeout="0"
+        @fallback="isFallbackStateActive = true"
+        @resolve="isFallbackStateActive = false"
+      >
         <Component :is="Component" />
       </Suspense>
     </RouterView>

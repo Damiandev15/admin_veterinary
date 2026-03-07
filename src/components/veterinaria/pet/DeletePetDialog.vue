@@ -1,5 +1,5 @@
 <script setup>
-import Swal from 'sweetalert2';
+import Swal from 'sweetalert2'
 
 
 const props = defineProps({
@@ -10,7 +10,7 @@ const props = defineProps({
   petSelected: {
     type: Object,
     required: true,
-  }
+  },
 })
 
 const emit = defineEmits(['update:isDialogVisible', 'deletePet'])
@@ -19,7 +19,7 @@ const dialogVisibleUpdate = val => {
   emit('update:isDialogVisible', val)
 }
 
-const pet_selected = ref(null);
+const pet_selected = ref(null)
 
 
 const deleted = async () => {
@@ -27,59 +27,77 @@ const deleted = async () => {
     const resp = await $api('/pets/' + pet_selected.value.id, {
       method: 'DELETE',
       onResponseError({ response }) {
-        console.log(response);
-        Swal.fire({ icon: 'error', title: 'Error', text: 'Error al eliminar la mascota' });
-      }
+        console.log(response)
+        Swal.fire({ icon: 'error', title: 'Error', text: 'Error al eliminar la mascota' })
+      },
 
     })
-    console.log(resp);
+
+    console.log(resp)
     Swal.fire({
       icon: 'success',
       title: 'Éxito',
       text: 'La mascota se ha eliminado correctamente',
       showConfirmButton: false,
-      timer: 1500
-    });
+      timer: 1500,
+    })
     emit('deletePet', pet_selected.value)
     emit('update:isDialogVisible', false)
 
   } catch (error) {
-    console.log(error);
-    Swal.fire({ icon: 'error', title: 'Error', text: 'Ocurrió un error inesperado' });
+    console.log(error)
+    Swal.fire({ icon: 'error', title: 'Error', text: 'Ocurrió un error inesperado' })
   }
 
 }
 
 onMounted(() => {
-  pet_selected.value = props.petSelected;
-  console.log(pet_selected.value);
+  pet_selected.value = props.petSelected
+  console.log(pet_selected.value)
 })
 </script>
 
 <template>
-  <VDialog :model-value="props.isDialogVisible" max-width="750" @update:model-value="dialogVisibleUpdate">
+  <VDialog
+    :model-value="props.isDialogVisible"
+    max-width="750"
+    @update:model-value="dialogVisibleUpdate"
+  >
     <VCard class="refer-and-earn-dialog pa-3 pa-sm-11">
       <!-- 👉 dialog close btn -->
-      <DialogCloseBtn variant="text" size="default" @click="emit('update:isDialogVisible', false)" />
+      <DialogCloseBtn
+        variant="text"
+        size="default"
+        @click="emit('update:isDialogVisible', false)"
+      />
 
       <VCardText class="pa-5">
         <div class="mb-6">
-          <h4 class="text-h4 text-center mb-2" v-if="pet_selected">
+          <h4
+            v-if="pet_selected"
+            class="text-h4 text-center mb-2"
+          >
             Deleted Pet : {{ pet_selected.id }}
           </h4>
-          <!-- <p class="text-sm-body-1 text-center">
+          <!--
+            <p class="text-sm-body-1 text-center">
             Supported payment methods
-          </p> -->
+            </p> 
+          -->
         </div>
-        <p v-if="pet_selected">¿Estas seguro de eliminar la mascota "{{ pet_selected.name }}"?</p>
-
+        <p v-if="pet_selected">
+          ¿Estas seguro de eliminar la mascota "{{ pet_selected.name }}"?
+        </p>
       </VCardText>
       <VCardText class="pa-5">
-        <VBtn color="error" class="mb-4" @click="deleted()">
+        <VBtn
+          color="error"
+          class="mb-4"
+          @click="deleted"
+        >
           Eliminar
         </VBtn>
       </VCardText>
-
     </VCard>
   </VDialog>
 </template>

@@ -1,5 +1,5 @@
 <script setup>
-import Swal from 'sweetalert2';
+import Swal from 'sweetalert2'
 
 
 const props = defineProps({
@@ -10,7 +10,7 @@ const props = defineProps({
   rolSelected: {
     type: Object,
     required: true,
-  }
+  },
 })
 
 const emit = defineEmits(['update:isDialogVisible', 'addRole'])
@@ -18,31 +18,34 @@ const emit = defineEmits(['update:isDialogVisible', 'addRole'])
 const dialogVisibleUpdate = val => {
   emit('update:isDialogVisible', val)
 }
-const LIST_PERMISSION = PERMISOS;
-const role = ref(null);
-const permissions = ref([]);
-const role_selected = ref(null);
+
+const LIST_PERMISSION = PERMISOS
+const role = ref(null)
+const permissions = ref([])
+const role_selected = ref(null)
 
 
-const addPermission = (permiso) => {
-  let INDEX = permissions.value.findIndex((perm) => perm == permiso);
+const addPermission = permiso => {
+  let INDEX = permissions.value.findIndex(perm => perm == permiso)
   if (INDEX != -1) {
-    permissions.value.splice(INDEX, 1);
+    permissions.value.splice(INDEX, 1)
   } else {
-    permissions.value.push(permiso);
+    permissions.value.push(permiso)
   }
-  console.log(permissions.value);
+  console.log(permissions.value)
 }
 
 const store = async () => {
   if (!role.value) {
-    Swal.fire({ icon: 'warning', title: 'Atención', text: "Se debe llenar el nombre del rol" });
-    return;
+    Swal.fire({ icon: 'warning', title: 'Atención', text: "Se debe llenar el nombre del rol" })
+    
+    return
   }
 
   if (permissions.value.length == 0) {
-    Swal.fire({ icon: 'warning', title: 'Atención', text: "Se debe seleccionar al menos un permiso" });
-    return;
+    Swal.fire({ icon: 'warning', title: 'Atención', text: "Se debe seleccionar al menos un permiso" })
+    
+    return
   }
 
 
@@ -56,62 +59,81 @@ const store = async () => {
       method: 'PATCH',
       body: data,
       onResponseError({ response }) {
-        console.log(response);
-        Swal.fire({ icon: 'error', title: 'Error', text: 'Error al actualizar el rol' });
-      }
+        console.log(response)
+        Swal.fire({ icon: 'error', title: 'Error', text: 'Error al actualizar el rol' })
+      },
     })
 
-    console.log(resp);
+    console.log(resp)
     if (resp.message == 403) {
-      Swal.fire({ icon: 'warning', title: 'Atención', text: resp.message_text });
+      Swal.fire({ icon: 'warning', title: 'Atención', text: resp.message_text })
     } else {
       Swal.fire({
         icon: 'success',
         title: 'Éxito',
         text: 'El rol se ha editado correctamente',
         showConfirmButton: false,
-        timer: 1500
-      });
+        timer: 1500,
+      })
       emit('addRole', true)
     }
 
   } catch (error) {
-    console.log(error);
-    Swal.fire({ icon: 'error', title: 'Error', text: 'Ocurrió un error inesperado' });
+    console.log(error)
+    Swal.fire({ icon: 'error', title: 'Error', text: 'Ocurrió un error inesperado' })
   }
 
 }
 
 onMounted(() => {
-  role_selected.value = props.rolSelected;
-  console.log(role_selected.value);
-  role.value = role_selected.value.name;
-  permissions.value = role_selected.value.permissions_pluck;
+  role_selected.value = props.rolSelected
+  console.log(role_selected.value)
+  role.value = role_selected.value.name
+  permissions.value = role_selected.value.permissions_pluck
 })
 </script>
 
 <template>
-  <VDialog :model-value="props.isDialogVisible" max-width="750" @update:model-value="dialogVisibleUpdate">
+  <VDialog
+    :model-value="props.isDialogVisible"
+    max-width="750"
+    @update:model-value="dialogVisibleUpdate"
+  >
     <VCard class="refer-and-earn-dialog pa-3 pa-sm-11">
       <!-- 👉 dialog close btn -->
-      <DialogCloseBtn variant="text" size="default" @click="emit('update:isDialogVisible', false)" />
+      <DialogCloseBtn
+        variant="text"
+        size="default"
+        @click="emit('update:isDialogVisible', false)"
+      />
 
       <VCardText class="pa-5">
         <div class="mb-6">
-          <h4 class="text-h4 text-center mb-2" v-if="role_selected">
+          <h4
+            v-if="role_selected"
+            class="text-h4 text-center mb-2"
+          >
             Edit Role : {{ role_selected.id }}
           </h4>
-          <!-- <p class="text-sm-body-1 text-center">
+          <!--
+            <p class="text-sm-body-1 text-center">
             Supported payment methods
-          </p> -->
+            </p> 
+          -->
         </div>
 
-        <VTextField label="Rol:" v-model="role" placeholder="Example: Administrador" />
-
-
+        <VTextField
+          v-model="role"
+          label="Rol:"
+          placeholder="Example: Administrador"
+        />
       </VCardText>
       <VCardText class="pa-5">
-        <VBtn color="primary" class="mb-4" @click="store()">
+        <VBtn
+          color="primary"
+          class="mb-4"
+          @click="store"
+        >
           Editar
         </VBtn>
         <VTable>
@@ -127,15 +149,26 @@ onMounted(() => {
           </thead>
 
           <tbody>
-            <tr v-for="(item, index) in LIST_PERMISSION" :key="index">
+            <tr
+              v-for="(item, index) in LIST_PERMISSION"
+              :key="index"
+            >
               <td>
                 {{ item.name }}
               </td>
               <td>
                 <ul>
-                  <li v-for="(permiso, index2) in item.permisos" :key="index2" style="list-style: none;">
-                    <VCheckbox v-model="permissions" :label="permiso.name" :value="permiso.permiso"
-                      @click="addPermission(permiso.permiso)" />
+                  <li
+                    v-for="(permiso, index2) in item.permisos"
+                    :key="index2"
+                    style="list-style: none;"
+                  >
+                    <VCheckbox
+                      v-model="permissions"
+                      :label="permiso.name"
+                      :value="permiso.permiso"
+                      @click="addPermission(permiso.permiso)"
+                    />
                   </li>
                 </ul>
               </td>
@@ -143,7 +176,6 @@ onMounted(() => {
           </tbody>
         </VTable>
       </VCardText>
-
     </VCard>
   </VDialog>
 </template>

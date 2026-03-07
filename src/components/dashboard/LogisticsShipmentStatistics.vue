@@ -11,82 +11,86 @@ const labelColor = 'rgba(var(--v-theme-on-background), var(--v-disabled-opacity)
 const borderColor = 'rgba(var(--v-border-color), var(--v-border-opacity))'
 
 const month_list = ref([
-    {
-        id: '01',
-        name: 'Enero',
-    },
-    {
-        id: '02',
-        name: 'Febrero',
-    },
-    {
-        id: '03',
-        name: 'Marzo'
-    },
-    {
-        id: '04',
-        name: 'Abril',
-    },
-    {
-        id: '05',
-        name: 'Mayo',
-    },
-    {
-        id: '06',
-        name: 'Junio'
-    },
-    {
-        id: '07',
-        name: 'Julio',
-    },
-    {
-        id: '08',
-        name: 'Agosto',
-    },
-    {
-        id: '09',
-        name: 'Septiembre'
-    },
-    {
-        id: '10',
-        name: 'Octubre',
-    },
-    {
-        id: '11',
-        name: 'Noviembre',
-    },
-    {
-        id: '12',
-        name: 'Diciembre'
-    }
-]);
-const year_list = ref(['2023','2024','2025','2026','2027','2028']);
-const year_selected = ref(new Date().getFullYear());
-const month_selected = ref(new Date().getMonth() + 1 <= 9 ? "0"+(new Date().getMonth() + 1) : ""+(new Date().getMonth() + 1));
-const total_payments = ref(0);
+  {
+    id: '01',
+    name: 'Enero',
+  },
+  {
+    id: '02',
+    name: 'Febrero',
+  },
+  {
+    id: '03',
+    name: 'Marzo',
+  },
+  {
+    id: '04',
+    name: 'Abril',
+  },
+  {
+    id: '05',
+    name: 'Mayo',
+  },
+  {
+    id: '06',
+    name: 'Junio',
+  },
+  {
+    id: '07',
+    name: 'Julio',
+  },
+  {
+    id: '08',
+    name: 'Agosto',
+  },
+  {
+    id: '09',
+    name: 'Septiembre',
+  },
+  {
+    id: '10',
+    name: 'Octubre',
+  },
+  {
+    id: '11',
+    name: 'Noviembre',
+  },
+  {
+    id: '12',
+    name: 'Diciembre',
+  },
+])
+
+const year_list = ref(['2023', '2024', '2025', '2026', '2027', '2028'])
+const year_selected = ref(new Date().getFullYear())
+const month_selected = ref(new Date().getMonth() + 1 <= 9 ? "0"+(new Date().getMonth() + 1) : ""+(new Date().getMonth() + 1))
+const total_payments = ref(0)
+
 const PaymentXDayOfMonth = async() => {
   try {
     let data = {
       year: year_selected.value,
       month: month_selected.value,
     }
-    categories_labels.value = [];
-    series.value = [];
-    shipmentConfig.value = null;
-    const resp =  await $api('/kpi_payments_x_day_month',{
-        method: 'POST',
-        body:data,
-        onResponseError({response}){
-            console.log(response);
-        }
+    categories_labels.value = []
+    series.value = []
+    shipmentConfig.value = null
+
+    const resp =  await $api('/kpi_payments_x_day_month', {
+      method: 'POST',
+      body: data,
+      onResponseError({ response }){
+        console.log(response)
+      },
     })
-    console.log(resp);
-    total_payments.value = resp.total_payments_month;
-    let TOTAL_PAYMENTS = [];
+
+    console.log(resp)
+    total_payments.value = resp.total_payments_month
+    let TOTAL_PAYMENTS = []
     resp.payment_for_day_months.forEach(day_month => {
-      TOTAL_PAYMENTS.push(day_month.total_payments);
-      categories_labels.value.push(day_month.day_created_format);
-    });
+      TOTAL_PAYMENTS.push(day_month.total_payments)
+      categories_labels.value.push(day_month.day_created_format)
+    })
     series.value.push({
       name: 'Pagos',
       type: 'column',
@@ -163,6 +167,7 @@ const PaymentXDayOfMonth = async() => {
       xaxis: {
         tickAmount: 10,
         categories: categories_labels,
+
         // [
         //   '1 Jan',
         //   '2 Jan',
@@ -188,6 +193,7 @@ const PaymentXDayOfMonth = async() => {
       },
       yaxis: {
         tickAmount: 4,
+
         // min: 0,
         // max: 50,
         labels: {
@@ -237,25 +243,28 @@ const PaymentXDayOfMonth = async() => {
           },
         },
       ],
-    };
+    }
 
   } catch (error) {
-    console.log(error);
+    console.log(error)
   }
 }
+
 onMounted(() => {
   PaymentXDayOfMonth()
 })
 
-watch(month_selected,() => {
-  PaymentXDayOfMonth();
+watch(month_selected, () => {
+  PaymentXDayOfMonth()
 })
-watch(year_selected,() => {
-  PaymentXDayOfMonth();
+watch(year_selected, () => {
+  PaymentXDayOfMonth()
 })
-const series = ref([]);
-const categories_labels = ref([]);
-const shipmentConfig = ref(null);
+
+const series = ref([])
+const categories_labels = ref([])
+const shipmentConfig = ref(null)
+
 // [
 //   {
 //     name: 'Shipment',
@@ -274,8 +283,6 @@ const shipmentConfig = ref(null);
 //     ],
 //   },
 // ]
-
-
 </script>
 
 <template>
@@ -288,7 +295,7 @@ const shipmentConfig = ref(null);
         <VRow>
           <VCol cols="6">
             <VSelect
-            v-model="year_selected"
+              v-model="year_selected"
               :items="year_list"
               label="Año"
               placeholder=""
@@ -297,7 +304,7 @@ const shipmentConfig = ref(null);
           </VCol>
           <VCol cols="6">
             <VSelect
-            v-model="month_selected"
+              v-model="month_selected"
               :items="month_list"
               item-title="name"
               item-value="id"
@@ -307,20 +314,22 @@ const shipmentConfig = ref(null);
             />
           </VCol>
         </VRow>
-        <!-- <VBtnGroup
+        <!--
+          <VBtnGroup
           density="compact"
           variant="outlined"
           divided
-        >
+          >
           <VBtn color="primary">
-            January
+          January
           </VBtn>
 
           <VBtn
-            icon="ri-arrow-down-s-line"
-            color="primary"
+          icon="ri-arrow-down-s-line"
+          color="primary"
           />
-        </VBtnGroup> -->
+          </VBtnGroup> 
+        -->
       </template>
     </VCardItem>
 

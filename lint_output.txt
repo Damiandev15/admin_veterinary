@@ -1,0 +1,1150 @@
+
+> materialize-vuejs-admin-template@2.0.0 lint
+> eslint . -c .eslintrc.cjs --fix --ext .ts,.js,.cjs,.vue,.tsx,.jsx
+
+
+C:\laragon\www\admin_veterinaria\src\components\dashboard\AnalyticsWeeklySales.vue
+   20:7   error  Identifier 'year_list' is not in camel case              camelcase
+   21:7   error  Identifier 'year_selected' is not in camel case          camelcase
+   23:7   error  Identifier 'total_payment_current' is not in camel case  camelcase
+   24:7   error  Identifier 'total_payment_before' is not in camel case   camelcase
+   25:7   error  Identifier 'total_payment_all' is not in camel case      camelcase
+   30:13  error  Identifier 'year_selected' is not in camel case          camelcase
+   43:5   error  Identifier 'total_payment_current' is not in camel case  camelcase
+   44:5   error  Identifier 'total_payment_before' is not in camel case   camelcase
+   45:5   error  Identifier 'total_payment_all' is not in camel case      camelcase
+   45:38  error  Identifier 'total_payment_current' is not in camel case  camelcase
+   45:76  error  Identifier 'total_payment_before' is not in camel case   camelcase
+   46:17  error  Identifier 'total_payment_all' is not in camel case      camelcase
+   47:9   error  Identifier 'categories_labels' is not in camel case      camelcase
+   48:9   error  Identifier 'payment_year_current' is not in camel case   camelcase
+   49:9   error  Identifier 'payment_year_before' is not in camel case    camelcase
+   51:42  error  Identifier 'month_of_year' is not in camel case          camelcase
+   52:7   error  Identifier 'payment_year_current' is not in camel case   camelcase
+   52:33  error  Identifier 'month_of_year' is not in camel case          camelcase
+   53:7   error  Identifier 'categories_labels' is not in camel case      camelcase
+   53:30  error  Identifier 'month_of_year' is not in camel case          camelcase
+   56:49  error  Identifier 'month_of_year' is not in camel case          camelcase
+   57:7   error  Identifier 'payment_year_before' is not in camel case    camelcase
+   57:32  error  Identifier 'month_of_year' is not in camel case          camelcase
+   63:26  error  Identifier 'year_selected' is not in camel case          camelcase
+   64:15  error  Identifier 'payment_year_current' is not in camel case   camelcase
+   96:36  error  Identifier 'year_selected' is not in camel case          camelcase
+   97:15  error  Identifier 'payment_year_before' is not in camel case    camelcase
+  171:21  error  Identifier 'categories_labels' is not in camel case      camelcase
+  199:27  error  Identifier 'year_selected' is not in camel case          camelcase
+  200:17  error  Identifier 'total_payment_current' is not in camel case  camelcase
+  205:36  error  Identifier 'year_selected' is not in camel case          camelcase
+  206:17  error  Identifier 'total_payment_before' is not in camel case   camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\dashboard\EcommerceSalesOverview.vue
+   5:7   error  Identifier 'report_general' is not in camel case                 camelcase
+   6:3   error  Identifier 'n_pets' is not in camel case                         camelcase
+   7:3   error  Identifier 'n_service_record' is not in camel case               camelcase
+   8:3   error  Identifier 'net_income_total_bs' is not in camel case            camelcase
+   9:3   error  Identifier 'net_income_total_usd' is not in camel case           camelcase
+  10:3   error  Identifier 'net_income_total_consolidated' is not in camel case  camelcase
+  11:3   error  Identifier 'net_income_total' is not in camel case               camelcase
+  12:3   error  Identifier 'net_income_total_before' is not in camel case        camelcase
+  13:3   error  Identifier 'variation_percentage' is not in camel case           camelcase
+  14:3   error  Identifier 'exchange_rate' is not in camel case                  camelcase
+  29:5   error  Identifier 'report_general' is not in camel case                 camelcase
+  29:26  error  Identifier 'n_pets' is not in camel case                         camelcase
+  30:5   error  Identifier 'report_general' is not in camel case                 camelcase
+  30:26  error  Identifier 'n_service_record' is not in camel case               camelcase
+  31:5   error  Identifier 'report_general' is not in camel case                 camelcase
+  31:26  error  Identifier 'net_income_total_bs' is not in camel case            camelcase
+  32:5   error  Identifier 'report_general' is not in camel case                 camelcase
+  32:26  error  Identifier 'net_income_total_usd' is not in camel case           camelcase
+  33:5   error  Identifier 'report_general' is not in camel case                 camelcase
+  33:26  error  Identifier 'net_income_total_consolidated' is not in camel case  camelcase
+  34:5   error  Identifier 'report_general' is not in camel case                 camelcase
+  34:26  error  Identifier 'net_income_total' is not in camel case               camelcase
+  35:5   error  Identifier 'report_general' is not in camel case                 camelcase
+  35:26  error  Identifier 'net_income_total_before' is not in camel case        camelcase
+  36:5   error  Identifier 'report_general' is not in camel case                 camelcase
+  36:26  error  Identifier 'variation_percentage' is not in camel case           camelcase
+  37:5   error  Identifier 'report_general' is not in camel case                 camelcase
+  37:26  error  Identifier 'exchange_rate' is not in camel case                  camelcase
+  41:16  error  Identifier 'report_general' is not in camel case                 camelcase
+  47:31  error  Identifier 'report_general' is not in camel case                 camelcase
+  53:31  error  Identifier 'report_general' is not in camel case                 camelcase
+  53:75  error  Identifier 'report_general' is not in camel case                 camelcase
+  59:31  error  Identifier 'report_general' is not in camel case                 camelcase
+  59:85  error  Identifier 'report_general' is not in camel case                 camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\dashboard\EcommerceTotalVisits.vue
+   2:7   error  Identifier 'income_bruto_selected' is not in camel case       camelcase
+   3:3   error  Identifier 'total_bruto_general' is not in camel case         camelcase
+   4:3   error  Identifier 'percentage_not_payments' is not in camel case     camelcase
+   5:3   error  Identifier 'percentage_payments' is not in camel case         camelcase
+   6:3   error  Identifier 'total_bruto_general_before' is not in camel case  camelcase
+   7:3   error  Identifier 'total_not_payments' is not in camel case          camelcase
+   8:3   error  Identifier 'total_payments' is not in camel case              camelcase
+   9:3   error  Identifier 'variation_percentage' is not in camel case        camelcase
+  23:5   error  Identifier 'income_bruto_selected' is not in camel case       camelcase
+  23:33  error  Identifier 'total_bruto_general' is not in camel case         camelcase
+  24:5   error  Identifier 'income_bruto_selected' is not in camel case       camelcase
+  24:33  error  Identifier 'percentage_not_payments' is not in camel case     camelcase
+  25:5   error  Identifier 'income_bruto_selected' is not in camel case       camelcase
+  25:33  error  Identifier 'percentage_payments' is not in camel case         camelcase
+  26:5   error  Identifier 'income_bruto_selected' is not in camel case       camelcase
+  26:33  error  Identifier 'total_bruto_general_before' is not in camel case  camelcase
+  27:5   error  Identifier 'income_bruto_selected' is not in camel case       camelcase
+  27:33  error  Identifier 'total_not_payments' is not in camel case          camelcase
+  28:5   error  Identifier 'income_bruto_selected' is not in camel case       camelcase
+  28:33  error  Identifier 'total_payments' is not in camel case              camelcase
+  29:5   error  Identifier 'income_bruto_selected' is not in camel case       camelcase
+  29:33  error  Identifier 'variation_percentage' is not in camel case        camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\dashboard\EcommerceWeeklySalesBg.vue
+  24:9  error  Identifier 'income_bruto' is not in camel case          camelcase
+  25:9  error  Identifier 'variation_percentage' is not in camel case  camelcase
+  48:9  error  Identifier 'income_bruto' is not in camel case          camelcase
+  49:9  error  Identifier 'variation_percentage' is not in camel case  camelcase
+  72:9  error  Identifier 'income_bruto' is not in camel case          camelcase
+  73:9  error  Identifier 'variation_percentage' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\dashboard\LogisticsShipmentStatistics.vue
+   13:7   error  Identifier 'month_list' is not in camel case         camelcase
+   64:7   error  Identifier 'year_list' is not in camel case          camelcase
+   65:7   error  Identifier 'year_selected' is not in camel case      camelcase
+   66:7   error  Identifier 'month_selected' is not in camel case     camelcase
+   67:7   error  Identifier 'total_payments' is not in camel case     camelcase
+   72:13  error  Identifier 'year_selected' is not in camel case      camelcase
+   73:14  error  Identifier 'month_selected' is not in camel case     camelcase
+   75:5   error  Identifier 'categories_labels' is not in camel case  camelcase
+   88:5   error  Identifier 'total_payments' is not in camel case     camelcase
+   90:41  error  Identifier 'day_month' is not in camel case          camelcase
+   91:27  error  Identifier 'day_month' is not in camel case          camelcase
+   92:7   error  Identifier 'categories_labels' is not in camel case  camelcase
+   92:36  error  Identifier 'day_month' is not in camel case          camelcase
+  169:21  error  Identifier 'categories_labels' is not in camel case  camelcase
+  265:7   error  Identifier 'categories_labels' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\appointment\DeleteAppoinmentDialog.vue
+  22:7   error  Identifier 'appointment_selected' is not in camel case  camelcase
+  27:48  error  Identifier 'appointment_selected' is not in camel case  camelcase
+  47:33  error  Identifier 'appointment_selected' is not in camel case  camelcase
+  59:3   error  Identifier 'appointment_selected' is not in camel case  camelcase
+  60:15  error  Identifier 'appointment_selected' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\medical_record\CalendarEventHandler.vue
+  45:14  error  Identifier 'new_event' is not in camel case  camelcase
+  46:17  error  Identifier 'new_event' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\payment\AddPaymentDialog.vue
+   23:3   error  Identifier 'method_payment' is not in camel case           camelcase
+   30:7   error  Identifier 'method_payments' is not in camel case          camelcase
+   40:7   error  Identifier 'medical_record_selected' is not in camel case  camelcase
+   44:5   error  Identifier 'method_payment' is not in camel case           camelcase
+   64:5   error  Identifier 'method_payment' is not in camel case           camelcase
+   66:5   error  Identifier 'appointment_id' is not in camel case           camelcase
+   66:21  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+   67:5   error  Identifier 'vaccination_id' is not in camel case           camelcase
+   67:21  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+   68:5   error  Identifier 'surgerie_id' is not in camel case              camelcase
+   68:18  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+   69:5   error  Identifier 'medical_record_id' is not in camel case        camelcase
+   69:24  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+  107:3   error  Identifier 'medical_record_selected' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\payment\DeletePaymentDialog.vue
+  26:7   error  Identifier 'medical_record_selected' is not in camel case  camelcase
+  31:93  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+  32:29  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+  33:26  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+  34:31  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+  62:3   error  Identifier 'medical_record_selected' is not in camel case  camelcase
+  63:15  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\payment\EditPaymentDialog.vue
+   27:3   error  Identifier 'method_payment' is not in camel case           camelcase
+   34:7   error  Identifier 'method_payments' is not in camel case          camelcase
+   44:7   error  Identifier 'medical_record_selected' is not in camel case  camelcase
+   48:5   error  Identifier 'method_payment' is not in camel case           camelcase
+   68:5   error  Identifier 'method_payment' is not in camel case           camelcase
+   70:5   error  Identifier 'appointment_id' is not in camel case           camelcase
+   70:21  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+   71:5   error  Identifier 'vaccination_id' is not in camel case           camelcase
+   71:21  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+   72:5   error  Identifier 'surgerie_id' is not in camel case              camelcase
+   72:18  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+   73:5   error  Identifier 'medical_record_id' is not in camel case        camelcase
+   73:24  error  Identifier 'medical_record_selected' is not in camel case  camelcase
+  109:3   error  Identifier 'medical_record_selected' is not in camel case  camelcase
+  110:14  error  Identifier 'method_payment' is not in camel case           camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\pet\DeletePetDialog.vue
+  22:7   error  Identifier 'pet_selected' is not in camel case  camelcase
+  27:40  error  Identifier 'pet_selected' is not in camel case  camelcase
+  44:23  error  Identifier 'pet_selected' is not in camel case  camelcase
+  55:3   error  Identifier 'pet_selected' is not in camel case  camelcase
+  56:15  error  Identifier 'pet_selected' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\role\DeleteRoleDialog.vue
+  22:7   error  Identifier 'role_selected' is not in camel case  camelcase
+  27:40  error  Identifier 'role_selected' is not in camel case  camelcase
+  55:3   error  Identifier 'role_selected' is not in camel case  camelcase
+  56:15  error  Identifier 'role_selected' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\role\EditRoleDialog.vue
+  25:7   error  Identifier 'role_selected' is not in camel case  camelcase
+  58:40  error  Identifier 'role_selected' is not in camel case  camelcase
+  89:3   error  Identifier 'role_selected' is not in camel case  camelcase
+  90:15  error  Identifier 'role_selected' is not in camel case  camelcase
+  91:16  error  Identifier 'role_selected' is not in camel case  camelcase
+  92:23  error  Identifier 'role_selected' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\staff\AddStaffDialog.vue
+  27:3  error  Identifier 'type_document' is not in camel case                            camelcase
+  28:3  error  Identifier 'n_document' is not in camel case                               camelcase
+  32:3  error  Identifier 'role_id' is not in camel case                                  camelcase
+  37:7  error  Identifier 'type_documents' is not in camel case                           camelcase
+  47:7  error  Duplicate key 'roles'. May cause name collision in script or template tag  vue/no-dupe-keys
+  55:5  error  Identifier 'type_document' is not in camel case                            camelcase
+  56:5  error  Identifier 'n_document' is not in camel case                               camelcase
+  60:5  error  Identifier 'role_id' is not in camel case                                  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\staff\DeleteStaffDialog.vue
+  22:7   error    Identifier 'user_selected' is not in camel case                              camelcase
+  27:42  error    Identifier 'user_selected' is not in camel case                              camelcase
+  43:10  warning  The "deleteUser" event has been triggered but not declared on `defineEmits`  vue/require-explicit-emits
+  43:24  error    Identifier 'user_selected' is not in camel case                              camelcase
+  54:3   error    Identifier 'user_selected' is not in camel case                              camelcase
+  55:15  error    Identifier 'user_selected' is not in camel case                              camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\staff\EditStaffDialog.vue
+   31:3   error  Identifier 'type_document' is not in camel case                            camelcase
+   32:3   error  Identifier 'n_document' is not in camel case                               camelcase
+   36:3   error  Identifier 'role_id' is not in camel case                                  camelcase
+   40:7   error  Identifier 'type_documents' is not in camel case                           camelcase
+   50:7   error  Duplicate key 'roles'. May cause name collision in script or template tag  vue/no-dupe-keys
+  189:14  error  Identifier 'type_document' is not in camel case                            camelcase
+  190:14  error  Identifier 'n_document' is not in camel case                               camelcase
+  194:14  error  Identifier 'role_id' is not in camel case                                  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\surgerie\DeleteSurgerieDialog.vue
+  22:7   error  Identifier 'surgerie_selected' is not in camel case  camelcase
+  27:45  error  Identifier 'surgerie_selected' is not in camel case  camelcase
+  46:30  error  Identifier 'surgerie_selected' is not in camel case  camelcase
+  58:3   error  Identifier 'surgerie_selected' is not in camel case  camelcase
+  59:15  error  Identifier 'surgerie_selected' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\vaccination\DeleteVaccinationDialog.vue
+  22:7   error  Identifier 'vaccination_selected' is not in camel case  camelcase
+  27:48  error  Identifier 'vaccination_selected' is not in camel case  camelcase
+  47:33  error  Identifier 'vaccination_selected' is not in camel case  camelcase
+  59:3   error  Identifier 'vaccination_selected' is not in camel case  camelcase
+  60:15  error  Identifier 'vaccination_selected' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\components\veterinaria\veterinario\DeleteVeterinarioDialog.vue
+  22:7   error  Identifier 'user_selected' is not in camel case  camelcase
+  27:48  error  Identifier 'user_selected' is not in camel case  camelcase
+  44:24  error  Identifier 'user_selected' is not in camel case  camelcase
+  55:3   error  Identifier 'user_selected' is not in camel case  camelcase
+  56:15  error  Identifier 'user_selected' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\layouts\components\DefaultLayoutWithVerticalNav.vue
+  65:13  error  Replace this if-then-else flow by a single return statement  sonarjs/prefer-single-boolean-return
+  84:13  error  Replace this if-then-else flow by a single return statement  sonarjs/prefer-single-boolean-return
+
+C:\laragon\www\admin_veterinaria\src\pages\appointment\add.vue
+    9:3   error  Identifier 'date_appointment' is not in camel case        camelcase
+   12:3   error  Identifier 'method_payment' is not in camel case          camelcase
+   13:3   error  Identifier 'amount_add' is not in camel case              camelcase
+   16:7   error  Identifier 'method_payments' is not in camel case         camelcase
+   25:7   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   30:14  error  Identifier 'date_appointment' is not in camel case        camelcase
+   32:3   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   37:14  error  Identifier 'date_appointment' is not in camel case        camelcase
+   40:14  error  Identifier 'method_payment' is not in camel case          camelcase
+   41:14  error  Identifier 'amount_add' is not in camel case              camelcase
+   42:3   error  Identifier 'select_pet' is not in camel case              camelcase
+   44:3   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   69:10  error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   79:10  error  Identifier 'select_pet' is not in camel case              camelcase
+  108:7   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  108:23  error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  109:7   error  Identifier 'pet_id' is not in camel case                  camelcase
+  109:15  error  Identifier 'select_pet' is not in camel case              camelcase
+  110:7   error  Identifier 'date_appointment' is not in camel case        camelcase
+  113:7   error  Identifier 'state_pay' is not in camel case               camelcase
+  114:7   error  Identifier 'method_payment' is not in camel case          camelcase
+  116:7   error  Identifier 'selected_segment_times' is not in camel case  camelcase
+  155:7   error  Identifier 'select_pet' is not in camel case              camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\appointment\edit\[id].vue
+    9:3   error  Identifier 'date_appointment' is not in camel case        camelcase
+   12:3   error  Identifier 'method_payment' is not in camel case          camelcase
+   13:3   error  Identifier 'amount_add' is not in camel case              camelcase
+   17:7   error  Identifier 'method_payments' is not in camel case         camelcase
+   26:7   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   29:7   error  Identifier 'appointment_selected' is not in camel case    camelcase
+   32:14  error  Identifier 'date_appointment' is not in camel case        camelcase
+   37:14  error  Identifier 'date_appointment' is not in camel case        camelcase
+   63:10  error  Identifier 'select_pet' is not in camel case              camelcase
+   75:7   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   75:23  error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   76:7   error  Identifier 'pet_id' is not in camel case                  camelcase
+   76:15  error  Identifier 'select_pet' is not in camel case              camelcase
+   79:7   error  Identifier 'selected_segment_times' is not in camel case  camelcase
+   83:12  error  Identifier 'date_appointment' is not in camel case        camelcase
+  126:7   error  Identifier 'select_pet' is not in camel case              camelcase
+  177:5   error  Identifier 'appointment_selected' is not in camel case    camelcase
+  178:20  error  Identifier 'appointment_selected' is not in camel case    camelcase
+  179:25  error  Identifier 'appointment_selected' is not in camel case    camelcase
+  180:24  error  Identifier 'appointment_selected' is not in camel case    camelcase
+  181:5   error  Identifier 'select_pet' is not in camel case              camelcase
+  181:24  error  Identifier 'appointment_selected' is not in camel case    camelcase
+  182:5   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  182:28  error  Identifier 'appointment_selected' is not in camel case    camelcase
+  183:9   error  Identifier 'appointment_selected' is not in camel case    camelcase
+  183:48  error  Identifier 'appointment_selected' is not in camel case    camelcase
+  184:18  error  Identifier 'method_payment' is not in camel case          camelcase
+  184:35  error  Identifier 'appointment_selected' is not in camel case    camelcase
+  185:18  error  Identifier 'amount_add' is not in camel case              camelcase
+  185:31  error  Identifier 'appointment_selected' is not in camel case    camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\appointment\list.vue
+   14:7   error  Identifier 'appointment_selected_deleted' is not in camel case  camelcase
+   18:7   error  Identifier 'type_date' is not in camel case                     camelcase
+   19:7   error  Identifier 'state_pay' is not in camel case                     camelcase
+   20:7   error  Identifier 'state_appointment' is not in camel case             camelcase
+   24:5   error  Identifier 'type_date' is not in camel case                     camelcase
+   24:16  error  Identifier 'type_date' is not in camel case                     camelcase
+   25:5   error  Identifier 'start_date' is not in camel case                    camelcase
+   26:5   error  Identifier 'end_date' is not in camel case                      camelcase
+   27:5   error  Identifier 'state_pay' is not in camel case                     camelcase
+   27:16  error  Identifier 'state_pay' is not in camel case                     camelcase
+   28:12  error  Identifier 'state_appointment' is not in camel case             camelcase
+   30:5   error  Identifier 'search_pets' is not in camel case                   camelcase
+   31:5   error  Identifier 'search_vets' is not in camel case                   camelcase
+   51:29  error  Identifier 'type_date' is not in camel case                     camelcase
+   55:7   error  Identifier 'state_pay' is not in camel case                     camelcase
+   56:29  error  Identifier 'state_pay' is not in camel case                     camelcase
+   58:7   error  Identifier 'state_appointment' is not in camel case             camelcase
+   59:25  error  Identifier 'state_appointment' is not in camel case             camelcase
+   83:3   error  Identifier 'appointment_selected_deleted' is not in camel case  camelcase
+   99:3   error  Identifier 'state_pay' is not in camel case                     camelcase
+  100:3   error  Identifier 'state_appointment' is not in camel case             camelcase
+  101:3   error  Identifier 'type_date' is not in camel case                     camelcase
+  147:14  error  Refactor the code to avoid using this boolean literal           sonarjs/no-redundant-boolean
+  148:5   error  Identifier 'appointment_selected_deleted' is not in camel case  camelcase
+  237:35  error  Irregular whitespace not allowed                                vue/no-irregular-whitespace
+
+C:\laragon\www\admin_veterinaria\src\pages\cliente\agenda.vue
+   23:3    error  Identifier 'service_type' is not in camel case             camelcase
+   27:3    error  Identifier 'pet_name' is not in camel case                 camelcase
+   28:3    error  Identifier 'pet_specie' is not in camel case               camelcase
+   29:3    error  Identifier 'pet_breed' is not in camel case                camelcase
+   30:3    error  Identifier 'pet_dirth_date' is not in camel case           camelcase
+   31:3    error  Identifier 'pet_gender' is not in camel case               camelcase
+   32:3    error  Identifier 'pet_color' is not in camel case                camelcase
+   33:3    error  Identifier 'pet_weight' is not in camel case               camelcase
+   34:3    error  Identifier 'pet_medical_notes' is not in camel case        camelcase
+   37:3    error  Identifier 'owner_first_name' is not in camel case         camelcase
+   38:3    error  Identifier 'owner_last_name' is not in camel case          camelcase
+   39:3    error  Identifier 'owner_email' is not in camel case              camelcase
+   40:3    error  Identifier 'owner_phone' is not in camel case              camelcase
+   41:3    error  Identifier 'owner_address' is not in camel case            camelcase
+   42:3    error  Identifier 'owner_city' is not in camel case               camelcase
+   43:3    error  Identifier 'owner_type_document' is not in camel case      camelcase
+   44:3    error  Identifier 'owner_n_document' is not in camel case         camelcase
+   45:3    error  Identifier 'owner_emergency_contact' is not in camel case  camelcase
+   46:3    error  Identifier 'owner_emergency_contact' is not in camel case  camelcase
+   47:3    error  Identifier 'owner_social_media' is not in camel case       camelcase
+   51:7    error  Identifier 'euthanasia_reason' is not in camel case        camelcase
+   58:5    error  Identifier 'euthanasia_reason' is not in camel case        camelcase
+   64:7    error  Identifier 'type_documents' is not in camel case           camelcase
+  100:10   error  Identifier 'euthanasia_reason' is not in camel case        camelcase
+  107:116  error  Identifier 'euthanasia_reason' is not in camel case        camelcase
+  139:18   error  Identifier 'pet_name' is not in camel case                 camelcase
+  249:25   error  'mr-4' class is not allowed                                vue/no-restricted-class
+  279:23   error  'mr-2' class is not allowed                                vue/no-restricted-class
+  293:25   error  'ml-4' class is not allowed                                vue/no-restricted-class
+
+C:\laragon\www\admin_veterinaria\src\pages\cliente\register.vue
+  14:3  error  Identifier 'first_name' is not in camel case             camelcase
+  15:3  error  Identifier 'last_name' is not in camel case              camelcase
+  19:3  error  Identifier 'password_confirmation' is not in camel case  camelcase
+  22:3  error  Identifier 'type_document' is not in camel case          camelcase
+  23:3  error  Identifier 'n_document' is not in camel case             camelcase
+  26:7  error  Identifier 'type_documents' is not in camel case         camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\grooming\edit\[id].vue
+   9:3   error  Identifier 'pet_id' is not in camel case                  camelcase
+  10:3   error  Identifier 'grooming_cut_type' is not in camel case       camelcase
+  11:3   error  Identifier 'grooming_face_style' is not in camel case     camelcase
+  12:3   error  Identifier 'grooming_observations' is not in camel case   camelcase
+  13:3   error  Identifier 'grooming_services' is not in camel case       camelcase
+  16:7   error  Identifier 'grooming_cut_types' is not in camel case      camelcase
+  17:7   error  Identifier 'grooming_face_styles' is not in camel case    camelcase
+  19:7   error  Identifier 'grooming_services_list' is not in camel case  camelcase
+  81:16  error  Identifier 'pet_id' is not in camel case                  camelcase
+  85:18  error  Identifier 'grooming_cut_type' is not in camel case       camelcase
+  86:18  error  Identifier 'grooming_face_style' is not in camel case     camelcase
+  87:18  error  Identifier 'grooming_observations' is not in camel case   camelcase
+  88:18  error  Identifier 'grooming_services' is not in camel case       camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\index.vue
+  83:15  warning  'v-html' directive can lead to XSS attack  vue/no-v-html
+
+C:\laragon\www\admin_veterinaria\src\pages\inventory\add.vue
+  13:3  error  Identifier 'cost_price' is not in camel case      camelcase
+  14:3  error  Identifier 'sale_price' is not in camel case      camelcase
+  16:3  error  Identifier 'min_stock' is not in camel case       camelcase
+  17:3  error  Identifier 'expiry_date' is not in camel case     camelcase
+  18:3  error  Identifier 'content_detail' is not in camel case  camelcase
+  70:5  error  Identifier 'cost_price' is not in camel case      camelcase
+  71:5  error  Identifier 'sale_price' is not in camel case      camelcase
+  73:5  error  Identifier 'min_stock' is not in camel case       camelcase
+  74:5  error  Identifier 'expiry_date' is not in camel case     camelcase
+  75:5  error  Identifier 'content_detail' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\inventory\list.vue
+   19:3  error  Identifier 'cost_price' is not in camel case      camelcase
+   20:3  error  Identifier 'sale_price' is not in camel case      camelcase
+   22:3  error  Identifier 'min_stock' is not in camel case       camelcase
+   23:3  error  Identifier 'expiry_date' is not in camel case     camelcase
+   24:3  error  Identifier 'content_detail' is not in camel case  camelcase
+  117:7  error  Identifier 'cost_price' is not in camel case      camelcase
+  118:7  error  Identifier 'sale_price' is not in camel case      camelcase
+  120:7  error  Identifier 'min_stock' is not in camel case       camelcase
+  121:7  error  Identifier 'expiry_date' is not in camel case     camelcase
+  122:7  error  Identifier 'content_detail' is not in camel case  camelcase
+  139:5  error  Identifier 'cost_price' is not in camel case      camelcase
+  140:5  error  Identifier 'sale_price' is not in camel case      camelcase
+  142:5  error  Identifier 'min_stock' is not in camel case       camelcase
+  143:5  error  Identifier 'expiry_date' is not in camel case     camelcase
+  144:5  error  Identifier 'content_detail' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\medical-record\index.vue
+   8:7   error  Identifier 'event_date' is not in camel case             camelcase
+  12:7   error  Identifier 'pet_selected' is not in camel case           camelcase
+  13:7   error  Identifier 'historial_records' is not in camel case      camelcase
+  16:8   error  Identifier 'select_pet' is not in camel case             camelcase
+  23:5   error  Identifier 'pet_id' is not in camel case                 camelcase
+  23:13  error  Identifier 'select_pet' is not in camel case             camelcase
+  24:5   error  Identifier 'start_date' is not in camel case             camelcase
+  24:17  error  Identifier 'event_date' is not in camel case             camelcase
+  24:36  error  Identifier 'event_date' is not in camel case             camelcase
+  25:5   error  Identifier 'end_date' is not in camel case               camelcase
+  25:15  error  Identifier 'event_date' is not in camel case             camelcase
+  25:34  error  Identifier 'event_date' is not in camel case             camelcase
+  33:9   error  Identifier 'error_exists' is not in camel case           camelcase
+  43:3   error  Identifier 'pet_selected' is not in camel case           camelcase
+  44:3   error  Identifier 'historial_records' is not in camel case      camelcase
+  47:7   error  Identifier 'search_medical_record' is not in camel case  camelcase
+  55:3   error  Identifier 'event_date' is not in camel case             camelcase
+  66:7   error  Identifier 'select_pet' is not in camel case             camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\payments\list.vue
+   12:7   error  Identifier 'type_services' is not in camel case                                          camelcase
+   26:7   error  Identifier 'medical_record_selected_deleted' is not in camel case                        camelcase
+   32:7   error  Identifier 'type_date' is not in camel case                                              camelcase
+   33:7   error  Identifier 'state_pay' is not in camel case                                              camelcase
+   34:7   error  Identifier 'state_vaccination' is not in camel case                                      camelcase
+   35:7   error  Identifier 'type_service' is not in camel case                                           camelcase
+   37:7   error  Identifier 'medical_record_selected' is not in camel case                                camelcase
+   38:7   error  Identifier 'payment_edit_selected' is not in camel case                                  camelcase
+   39:7   error  Identifier 'payment_delete_selected' is not in camel case                                camelcase
+   43:5   error  Identifier 'type_date' is not in camel case                                              camelcase
+   43:16  error  Identifier 'type_date' is not in camel case                                              camelcase
+   44:5   error  Identifier 'start_date' is not in camel case                                             camelcase
+   45:5   error  Identifier 'end_date' is not in camel case                                               camelcase
+   46:5   error  Identifier 'state_pay' is not in camel case                                              camelcase
+   46:16  error  Identifier 'state_pay' is not in camel case                                              camelcase
+   47:12  error  Identifier 'state_vaccination' is not in camel case                                      camelcase
+   49:5   error  Identifier 'search_pets' is not in camel case                                            camelcase
+   50:5   error  Identifier 'search_vets' is not in camel case                                            camelcase
+   51:5   error  Identifier 'type_service' is not in camel case                                           camelcase
+   51:19  error  Identifier 'type_service' is not in camel case                                           camelcase
+   76:29  error  Identifier 'type_date' is not in camel case                                              camelcase
+   80:7   error  Identifier 'state_pay' is not in camel case                                              camelcase
+   81:29  error  Identifier 'state_pay' is not in camel case                                              camelcase
+   83:7   error  Identifier 'state_vaccination' is not in camel case                                      camelcase
+   84:25  error  Identifier 'state_vaccination' is not in camel case                                      camelcase
+   95:7   error  Identifier 'type_service' is not in camel case                                           camelcase
+   96:32  error  Identifier 'type_service' is not in camel case                                           camelcase
+  102:3   error  Identifier 'medical_record_selected_deleted' is not in camel case                        camelcase
+  104:3   error  Identifier 'payment_delete_selected' is not in camel case                                camelcase
+  110:26  error  Identifier 'is_view' is not in camel case                                                camelcase
+  120:3   error  Identifier 'state_pay' is not in camel case                                              camelcase
+  121:3   error  Identifier 'state_vaccination' is not in camel case                                      camelcase
+  122:3   error  Identifier 'type_date' is not in camel case                                              camelcase
+  124:3   error  Identifier 'type_service' is not in camel case                                           camelcase
+  140:26  error  Identifier 'is_view' is not in camel case                                                camelcase
+  147:3   error  Identifier 'medical_record_selected' is not in camel case                                camelcase
+  152:3   error  Identifier 'payment_edit_selected' is not in camel case                                  camelcase
+  153:3   error  Identifier 'medical_record_selected' is not in camel case                                camelcase
+  156:45  error  Update this function so that its implementation is not identical to the one on line 136  sonarjs/no-identical-functions
+  160:26  error  Identifier 'is_view' is not in camel case                                                camelcase
+  170:14  error  Refactor the code to avoid using this boolean literal                                    sonarjs/no-redundant-boolean
+  171:5   error  Identifier 'medical_record_selected_deleted' is not in camel case                        camelcase
+  172:5   error  Identifier 'payment_delete_selected' is not in camel case                                camelcase
+  176:14  error  Refactor the code to avoid using this boolean literal                                    sonarjs/no-redundant-boolean
+  177:5   error  Identifier 'medical_record_selected' is not in camel case                                camelcase
+  181:14  error  Refactor the code to avoid using this boolean literal                                    sonarjs/no-redundant-boolean
+  182:5   error  Identifier 'medical_record_selected' is not in camel case                                camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\pet\add.vue
+   12:3   error  Identifier 'dirth_date' is not in camel case               camelcase
+   16:3   error  Identifier 'medical_notes' is not in camel case            camelcase
+   21:3   error  Identifier 'general_treatment' is not in camel case        camelcase
+   22:3   error  Identifier 'vaccine_rabies' is not in camel case           camelcase
+   23:3   error  Identifier 'vaccine_sextuple' is not in camel case         camelcase
+   24:3   error  Identifier 'vaccine_puppy' is not in camel case            camelcase
+   26:3   error  Identifier 'bravecto_product' is not in camel case         camelcase
+   29:3   error  Identifier 'grooming_cut_type' is not in camel case        camelcase
+   30:3   error  Identifier 'grooming_face_style' is not in camel case      camelcase
+   31:3   error  Identifier 'grooming_observations' is not in camel case    camelcase
+   32:3   error  Identifier 'grooming_services' is not in camel case        camelcase
+   34:3   error  Identifier 'first_name' is not in camel case               camelcase
+   35:3   error  Identifier 'last_name' is not in camel case                camelcase
+   40:3   error  Identifier 'emergency_contact' is not in camel case        camelcase
+   41:3   error  Identifier 'type_document' is not in camel case            camelcase
+   42:3   error  Identifier 'n_document' is not in camel case               camelcase
+   43:3   error  Identifier 'social_media' is not in camel case             camelcase
+   46:7   error  Identifier 'grooming_cut_types' is not in camel case       camelcase
+   47:7   error  Identifier 'grooming_face_styles' is not in camel case     camelcase
+   49:7   error  Identifier 'grooming_services_list' is not in camel case   camelcase
+  105:7   error  Identifier 'type_documents' is not in camel case           camelcase
+  115:7   error  Identifier 'hematology_options' is not in camel case       camelcase
+  126:7   error  Identifier 'hematology_units' is not in camel case         camelcase
+  138:7   error  Identifier 'chemistry_options' is not in camel case        camelcase
+  156:7   error  Identifier 'chemistry_refs' is not in camel case           camelcase
+  178:5   error  Identifier 'evolution_notes' is not in camel case          camelcase
+  179:5   error  Identifier 'exams_hematology' is not in camel case         camelcase
+  180:5   error  Identifier 'exams_chemistry' is not in camel case          camelcase
+  180:48  error  Identifier 'v_ref' is not in camel case                    camelcase
+  184:7   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  187:3   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  191:7   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  192:5   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  198:3   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  202:7   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  203:5   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  210:10  error  Identifier 'hematology_options' is not in camel case       camelcase
+  214:20  error  Identifier 'hematology_units' is not in camel case         camelcase
+  215:17  error  Identifier 'hematology_units' is not in camel case         camelcase
+  220:3   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  220:91  error  Identifier 'v_ref' is not in camel case                    camelcase
+  224:7   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  225:5   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  232:10  error  Identifier 'chemistry_options' is not in camel case        camelcase
+  236:20  error  Identifier 'chemistry_refs' is not in camel case           camelcase
+  237:10  error  Identifier 'v_ref' is not in camel case                    camelcase
+  237:18  error  Identifier 'chemistry_refs' is not in camel case           camelcase
+  290:14  error  Identifier 'dirth_date' is not in camel case               camelcase
+  294:14  error  Identifier 'medical_notes' is not in camel case            camelcase
+  296:14  error  Identifier 'general_treatment' is not in camel case        camelcase
+  297:14  error  Identifier 'vaccine_rabies' is not in camel case           camelcase
+  298:14  error  Identifier 'vaccine_sextuple' is not in camel case         camelcase
+  299:14  error  Identifier 'vaccine_puppy' is not in camel case            camelcase
+  301:14  error  Identifier 'bravecto_product' is not in camel case         camelcase
+  303:14  error  Identifier 'grooming_cut_type' is not in camel case        camelcase
+  304:14  error  Identifier 'grooming_face_style' is not in camel case      camelcase
+  305:14  error  Identifier 'grooming_observations' is not in camel case    camelcase
+  306:14  error  Identifier 'grooming_services' is not in camel case        camelcase
+  308:14  error  Identifier 'first_name' is not in camel case               camelcase
+  309:14  error  Identifier 'last_name' is not in camel case                camelcase
+  314:14  error  Identifier 'emergency_contact' is not in camel case        camelcase
+  315:14  error  Identifier 'type_document' is not in camel case            camelcase
+  316:14  error  Identifier 'n_document' is not in camel case               camelcase
+  317:14  error  Identifier 'social_media' is not in camel case             camelcase
+  324:3   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  471:63  error  Identifier 'medical_history_entries' is not in camel case  camelcase
+  914:23  error  'pl-2' class is not allowed                                vue/no-restricted-class
+  921:25  error  'mr-1' class is not allowed                                vue/no-restricted-class
+  986:23  error  'pl-2' class is not allowed                                vue/no-restricted-class
+  993:25  error  'mr-1' class is not allowed                                vue/no-restricted-class
+
+C:\laragon\www\admin_veterinaria\src\pages\pet\daily-add.vue
+  10:3  error  Identifier 'dirth_date' is not in camel case         camelcase
+  14:3  error  Identifier 'medical_notes' is not in camel case      camelcase
+  15:3  error  Identifier 'first_name' is not in camel case         camelcase
+  16:3  error  Identifier 'last_name' is not in camel case          camelcase
+  21:3  error  Identifier 'emergency_contact' is not in camel case  camelcase
+  22:3  error  Identifier 'type_document' is not in camel case      camelcase
+  23:3  error  Identifier 'n_document' is not in camel case         camelcase
+  24:3  error  Identifier 'social_media' is not in camel case       camelcase
+  27:7  error  Identifier 'type_documents' is not in camel case     camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\pet\daily-edit\[id].vue
+  11:3   error  Identifier 'dirth_date' is not in camel case         camelcase
+  15:3   error  Identifier 'medical_notes' is not in camel case      camelcase
+  16:3   error  Identifier 'first_name' is not in camel case         camelcase
+  17:3   error  Identifier 'last_name' is not in camel case          camelcase
+  22:3   error  Identifier 'emergency_contact' is not in camel case  camelcase
+  23:3   error  Identifier 'type_document' is not in camel case      camelcase
+  24:3   error  Identifier 'n_document' is not in camel case         camelcase
+  25:3   error  Identifier 'social_media' is not in camel case       camelcase
+  28:7   error  Identifier 'type_documents' is not in camel case     camelcase
+  72:16  error  Identifier 'dirth_date' is not in camel case         camelcase
+  76:16  error  Identifier 'medical_notes' is not in camel case      camelcase
+  78:16  error  Identifier 'first_name' is not in camel case         camelcase
+  79:16  error  Identifier 'last_name' is not in camel case          camelcase
+  84:16  error  Identifier 'emergency_contact' is not in camel case  camelcase
+  85:16  error  Identifier 'type_document' is not in camel case      camelcase
+  86:16  error  Identifier 'n_document' is not in camel case         camelcase
+  87:16  error  Identifier 'social_media' is not in camel case       camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\pet\edit\[id].vue
+    11:3   error  Identifier 'dirth_date' is not in camel case               camelcase
+    15:3   error  Identifier 'medical_notes' is not in camel case            camelcase
+    18:3   error  Identifier 'evolution_notes' is not in camel case          camelcase
+    19:3   error  Identifier 'exams_hematology' is not in camel case         camelcase
+    20:3   error  Identifier 'exams_chemistry' is not in camel case          camelcase
+    23:3   error  Identifier 'general_treatment' is not in camel case        camelcase
+    24:3   error  Identifier 'vaccine_rabies' is not in camel case           camelcase
+    25:3   error  Identifier 'vaccine_sextuple' is not in camel case         camelcase
+    26:3   error  Identifier 'vaccine_puppy' is not in camel case            camelcase
+    28:3   error  Identifier 'bravecto_product' is not in camel case         camelcase
+    31:3   error  Identifier 'grooming_cut_type' is not in camel case        camelcase
+    32:3   error  Identifier 'grooming_face_style' is not in camel case      camelcase
+    33:3   error  Identifier 'grooming_observations' is not in camel case    camelcase
+    34:3   error  Identifier 'grooming_services' is not in camel case        camelcase
+    36:3   error  Identifier 'first_name' is not in camel case               camelcase
+    37:3   error  Identifier 'last_name' is not in camel case                camelcase
+    42:3   error  Identifier 'emergency_contact' is not in camel case        camelcase
+    43:3   error  Identifier 'type_document' is not in camel case            camelcase
+    44:3   error  Identifier 'n_document' is not in camel case               camelcase
+    45:3   error  Identifier 'social_media' is not in camel case             camelcase
+    48:7   error  Identifier 'grooming_cut_types' is not in camel case       camelcase
+    49:7   error  Identifier 'grooming_face_styles' is not in camel case     camelcase
+    51:7   error  Identifier 'grooming_services_list' is not in camel case   camelcase
+   107:7   error  Identifier 'type_documents' is not in camel case           camelcase
+   117:7   error  Identifier 'pet_selected' is not in camel case             camelcase
+   121:7   error  Identifier 'hematology_options' is not in camel case       camelcase
+   132:7   error  Identifier 'hematology_units' is not in camel case         camelcase
+   143:7   error  Identifier 'chemistry_options' is not in camel case        camelcase
+   161:7   error  Identifier 'chemistry_refs' is not in camel case           camelcase
+   183:5   error  Identifier 'evolution_notes' is not in camel case          camelcase
+   184:5   error  Identifier 'exams_hematology' is not in camel case         camelcase
+   185:5   error  Identifier 'exams_chemistry' is not in camel case          camelcase
+   185:48  error  Identifier 'v_ref' is not in camel case                    camelcase
+   189:7   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   192:3   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   196:7   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   197:5   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   203:3   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   207:7   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   208:5   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   215:10  error  Identifier 'hematology_options' is not in camel case       camelcase
+   219:20  error  Identifier 'hematology_units' is not in camel case         camelcase
+   220:17  error  Identifier 'hematology_units' is not in camel case         camelcase
+   225:3   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   225:91  error  Identifier 'v_ref' is not in camel case                    camelcase
+   229:7   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   230:5   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   237:10  error  Identifier 'chemistry_options' is not in camel case        camelcase
+   241:20  error  Identifier 'chemistry_refs' is not in camel case           camelcase
+   242:10  error  Identifier 'v_ref' is not in camel case                    camelcase
+   242:18  error  Identifier 'chemistry_refs' is not in camel case           camelcase
+   405:63  error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   476:5   error  Identifier 'pet_selected' is not in camel case             camelcase
+   479:23  error  Identifier 'pet_selected' is not in camel case             camelcase
+   480:25  error  Identifier 'pet_selected' is not in camel case             camelcase
+   481:24  error  Identifier 'pet_selected' is not in camel case             camelcase
+   482:16  error  Identifier 'dirth_date' is not in camel case               camelcase
+   482:29  error  Identifier 'pet_selected' is not in camel case             camelcase
+   483:25  error  Identifier 'pet_selected' is not in camel case             camelcase
+   484:24  error  Identifier 'pet_selected' is not in camel case             camelcase
+   485:25  error  Identifier 'pet_selected' is not in camel case             camelcase
+   486:16  error  Identifier 'medical_notes' is not in camel case            camelcase
+   486:32  error  Identifier 'pet_selected' is not in camel case             camelcase
+   489:16  error  Identifier 'first_name' is not in camel case               camelcase
+   489:29  error  Identifier 'pet_selected' is not in camel case             camelcase
+   490:16  error  Identifier 'last_name' is not in camel case                camelcase
+   490:28  error  Identifier 'pet_selected' is not in camel case             camelcase
+   491:24  error  Identifier 'pet_selected' is not in camel case             camelcase
+   492:24  error  Identifier 'pet_selected' is not in camel case             camelcase
+   493:26  error  Identifier 'pet_selected' is not in camel case             camelcase
+   494:23  error  Identifier 'pet_selected' is not in camel case             camelcase
+   495:16  error  Identifier 'emergency_contact' is not in camel case        camelcase
+   495:36  error  Identifier 'pet_selected' is not in camel case             camelcase
+   496:16  error  Identifier 'type_document' is not in camel case            camelcase
+   496:32  error  Identifier 'pet_selected' is not in camel case             camelcase
+   497:16  error  Identifier 'n_document' is not in camel case               camelcase
+   497:29  error  Identifier 'pet_selected' is not in camel case             camelcase
+   498:16  error  Identifier 'social_media' is not in camel case             camelcase
+   498:31  error  Identifier 'pet_selected' is not in camel case             camelcase
+   501:9   error  Identifier 'pet_selected' is not in camel case             camelcase
+   503:21  error  Identifier 'pet_selected' is not in camel case             camelcase
+   505:11  error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   507:11  error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   512:16  error  Identifier 'pet_selected' is not in camel case             camelcase
+   514:22  error  Identifier 'pet_selected' is not in camel case             camelcase
+   517:13  error  Identifier 'evolution_notes' is not in camel case          camelcase
+   519:44  error  Identifier 'exams_hematology' is not in camel case         camelcase
+   522:43  error  Identifier 'exams_chemistry' is not in camel case          camelcase
+   524:7   error  Identifier 'medical_history_entries' is not in camel case  camelcase
+   527:9   error  Identifier 'pet_selected' is not in camel case             camelcase
+   528:18  error  Identifier 'general_treatment' is not in camel case        camelcase
+   528:38  error  Identifier 'pet_selected' is not in camel case             camelcase
+   546:18  error  Identifier 'vaccine_rabies' is not in camel case           camelcase
+   546:53  error  Identifier 'pet_selected' is not in camel case             camelcase
+   547:18  error  Identifier 'vaccine_sextuple' is not in camel case         camelcase
+   547:55  error  Identifier 'pet_selected' is not in camel case             camelcase
+   548:18  error  Identifier 'vaccine_puppy' is not in camel case            camelcase
+   548:52  error  Identifier 'pet_selected' is not in camel case             camelcase
+   549:48  error  Identifier 'pet_selected' is not in camel case             camelcase
+   550:18  error  Identifier 'bravecto_product' is not in camel case         camelcase
+   550:55  error  Identifier 'pet_selected' is not in camel case             camelcase
+   553:9   error  Identifier 'pet_selected' is not in camel case             camelcase
+   554:18  error  Identifier 'grooming_cut_type' is not in camel case        camelcase
+   554:38  error  Identifier 'pet_selected' is not in camel case             camelcase
+   555:18  error  Identifier 'grooming_face_style' is not in camel case      camelcase
+   555:40  error  Identifier 'pet_selected' is not in camel case             camelcase
+   556:18  error  Identifier 'grooming_observations' is not in camel case    camelcase
+   556:42  error  Identifier 'pet_selected' is not in camel case             camelcase
+   557:18  error  Identifier 'grooming_services' is not in camel case        camelcase
+   557:38  error  Identifier 'pet_selected' is not in camel case             camelcase
+   558:44  error  Identifier 'pet_selected' is not in camel case             camelcase
+   561:33  error  Identifier 'pet_selected' is not in camel case             camelcase
+   939:23  error  'pl-2' class is not allowed                                vue/no-restricted-class
+   946:25  error  'mr-1' class is not allowed                                vue/no-restricted-class
+  1011:23  error  'pl-2' class is not allowed                                vue/no-restricted-class
+  1018:25  error  'mr-1' class is not allowed                                vue/no-restricted-class
+
+C:\laragon\www\admin_veterinaria\src\pages\pet\list.vue
+   13:7   error  Identifier 'pet_selected_deleted' is not in camel case  camelcase
+   41:3   error  Identifier 'pet_selected_deleted' is not in camel case  camelcase
+   99:14  error  Refactor the code to avoid using this boolean literal   sonarjs/no-redundant-boolean
+  100:5   error  Identifier 'pet_selected_deleted' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\pos.vue
+   72:11  error  Identifier 'full_name' is not in camel case       camelcase
+  100:7   error  Identifier 'product_id' is not in camel case      camelcase
+  103:7   error  Identifier 'unit_price' is not in camel case      camelcase
+  106:7   error  Identifier 'max_stock' is not in camel case       camelcase
+  158:7   error  Identifier 'client_id' is not in camel case       camelcase
+  159:7   error  Identifier 'payment_method' is not in camel case  camelcase
+  161:9   error  Identifier 'product_id' is not in camel case      camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\roles-permisos\index.vue
+  31:7   error  Identifier 'role_selected' is not in camel case          camelcase
+  32:7   error  Identifier 'role_selected_deleted' is not in camel case  camelcase
+  52:3   error  Identifier 'role_selected' is not in camel case          camelcase
+  57:3   error  Identifier 'role_selected_deleted' is not in camel case  camelcase
+  65:16  error  Refactor the code to avoid using this boolean literal    sonarjs/no-redundant-boolean
+  66:5   error  Identifier 'role_selected' is not in camel case          camelcase
+  71:16  error  Refactor the code to avoid using this boolean literal    sonarjs/no-redundant-boolean
+  72:5   error  Identifier 'role_selected_deleted' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\second-page.vue
+  12:7  error  Identifier 'select_pet' is not in camel case    camelcase
+  25:9  error  Identifier 'error_exists' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\settings-exchange-rate.vue
+  11:3   error  Identifier 'last_updated' is not in camel case  camelcase
+  47:26  error  Identifier 'last_updated' is not in camel case  camelcase
+  93:26  error  Identifier 'last_updated' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\settings\landing.vue
+  19:3  error  Identifier 'section_key' is not in camel case  camelcase
+  35:7  error  Identifier 'section_key' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\staffs\index.vue
+   53:7   error  Identifier 'staff_selected' is not in camel case          camelcase
+   54:7   error  Identifier 'staff_selected_deleted' is not in camel case  camelcase
+   93:3   error  Identifier 'staff_selected' is not in camel case          camelcase
+   98:3   error  Identifier 'staff_selected_deleted' is not in camel case  camelcase
+  106:16  error  Refactor the code to avoid using this boolean literal     sonarjs/no-redundant-boolean
+  107:5   error  Identifier 'staff_selected' is not in camel case          camelcase
+  112:16  error  Refactor the code to avoid using this boolean literal     sonarjs/no-redundant-boolean
+  113:5   error  Identifier 'staff_selected_deleted' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\surgerie\add.vue
+    9:3    error  Identifier 'surgerie_date' is not in camel case           camelcase
+   12:3    error  Identifier 'method_payment' is not in camel case          camelcase
+   13:3    error  Identifier 'amount_add' is not in camel case              camelcase
+   16:7    error  Identifier 'method_payments' is not in camel case         camelcase
+   25:7    error  Identifier 'surgerie_types' is not in camel case          camelcase
+   39:7    error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   41:7    error  Identifier 'medical_notes' is not in camel case           camelcase
+   43:7    error  Identifier 'surgerie_type' is not in camel case           camelcase
+   47:7    error  Identifier 'euthanasia_reason' is not in camel case       camelcase
+   52:5    error  Identifier 'euthanasia_reason' is not in camel case       camelcase
+   57:14   error  Identifier 'surgerie_date' is not in camel case           camelcase
+   59:3    error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   78:14   error  Identifier 'surgerie_date' is not in camel case           camelcase
+   81:14   error  Identifier 'method_payment' is not in camel case          camelcase
+   82:14   error  Identifier 'amount_add' is not in camel case              camelcase
+   83:3    error  Identifier 'select_pet' is not in camel case              camelcase
+   84:3    error  Identifier 'medical_notes' is not in camel case           camelcase
+   87:3    error  Identifier 'surgerie_type' is not in camel case           camelcase
+   88:3    error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  100:10   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  106:10   error  Identifier 'medical_notes' is not in camel case           camelcase
+  112:10   error  Identifier 'select_pet' is not in camel case              camelcase
+  136:9    error  Identifier 'surgerie_type' is not in camel case           camelcase
+  142:12   error  Identifier 'euthanasia_reason' is not in camel case       camelcase
+  149:7    error  Identifier 'medical_notes' is not in camel case           camelcase
+  149:30   error  Identifier 'medical_notes' is not in camel case           camelcase
+  149:52   error  Identifier 'medical_notes' is not in camel case           camelcase
+  149:111  error  Identifier 'euthanasia_reason' is not in camel case       camelcase
+  160:7    error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  160:23   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  161:7    error  Identifier 'pet_id' is not in camel case                  camelcase
+  161:15   error  Identifier 'select_pet' is not in camel case              camelcase
+  162:7    error  Identifier 'surgerie_date' is not in camel case           camelcase
+  163:7    error  Identifier 'medical_notes' is not in camel case           camelcase
+  163:22   error  Identifier 'medical_notes' is not in camel case           camelcase
+  164:7    error  Identifier 'surgerie_type' is not in camel case           camelcase
+  164:22   error  Identifier 'surgerie_type' is not in camel case           camelcase
+  166:7    error  Identifier 'state_pay' is not in camel case               camelcase
+  167:7    error  Identifier 'method_payment' is not in camel case          camelcase
+  169:7    error  Identifier 'selected_segment_times' is not in camel case  camelcase
+  209:7    error  Identifier 'select_pet' is not in camel case              camelcase
+  404:19   error  'mr-4' class is not allowed                               vue/no-restricted-class
+  431:21   error  'mr-2' class is not allowed                               vue/no-restricted-class
+  445:23   error  'ml-4' class is not allowed                               vue/no-restricted-class
+
+C:\laragon\www\admin_veterinaria\src\pages\surgerie\edit\[id].vue
+    9:3   error  Identifier 'surgerie_date' is not in camel case           camelcase
+   12:3   error  Identifier 'method_payment' is not in camel case          camelcase
+   13:3   error  Identifier 'amount_add' is not in camel case              camelcase
+   16:7   error  Identifier 'method_payments' is not in camel case         camelcase
+   25:7   error  Identifier 'surgerie_types' is not in camel case          camelcase
+   34:7   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   36:7   error  Identifier 'medical_notes' is not in camel case           camelcase
+   38:7   error  Identifier 'surgerie_type' is not in camel case           camelcase
+   40:7   error  Identifier 'surgerie_selected' is not in camel case       camelcase
+   44:14  error  Identifier 'surgerie_date' is not in camel case           camelcase
+   65:10  error  Identifier 'medical_notes' is not in camel case           camelcase
+   71:10  error  Identifier 'select_pet' is not in camel case              camelcase
+   84:7   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   84:23  error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   85:7   error  Identifier 'pet_id' is not in camel case                  camelcase
+   85:15  error  Identifier 'select_pet' is not in camel case              camelcase
+   86:7   error  Identifier 'surgerie_date' is not in camel case           camelcase
+   87:7   error  Identifier 'medical_notes' is not in camel case           camelcase
+   87:22  error  Identifier 'medical_notes' is not in camel case           camelcase
+   88:7   error  Identifier 'surgerie_type' is not in camel case           camelcase
+   88:22  error  Identifier 'surgerie_type' is not in camel case           camelcase
+   90:7   error  Identifier 'selected_segment_times' is not in camel case  camelcase
+  142:5   error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  143:5   error  Identifier 'medical_notes' is not in camel case           camelcase
+  143:27  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  144:25  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  145:5   error  Identifier 'select_pet' is not in camel case              camelcase
+  145:24  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  146:5   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  146:28  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  147:21  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  148:21  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  149:5   error  Identifier 'surgerie_type' is not in camel case           camelcase
+  149:27  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  150:19  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  151:9   error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  151:45  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  152:18  error  Identifier 'method_payment' is not in camel case          camelcase
+  152:35  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  153:18  error  Identifier 'amount_add' is not in camel case              camelcase
+  153:31  error  Identifier 'surgerie_selected' is not in camel case       camelcase
+  169:7   error  Identifier 'select_pet' is not in camel case              camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\surgerie\list.vue
+   11:7   error  Identifier 'surgerie_types' is not in camel case             camelcase
+   21:7   error  Identifier 'surgerie_selected_deleted' is not in camel case  camelcase
+   25:7   error  Identifier 'type_date' is not in camel case                  camelcase
+   26:7   error  Identifier 'state_pay' is not in camel case                  camelcase
+   27:7   error  Identifier 'state_vaccination' is not in camel case          camelcase
+   31:5   error  Identifier 'type_date' is not in camel case                  camelcase
+   31:16  error  Identifier 'type_date' is not in camel case                  camelcase
+   32:5   error  Identifier 'start_date' is not in camel case                 camelcase
+   33:5   error  Identifier 'end_date' is not in camel case                   camelcase
+   34:5   error  Identifier 'state_pay' is not in camel case                  camelcase
+   34:16  error  Identifier 'state_pay' is not in camel case                  camelcase
+   35:12  error  Identifier 'state_vaccination' is not in camel case          camelcase
+   37:5   error  Identifier 'search_pets' is not in camel case                camelcase
+   38:5   error  Identifier 'search_vets' is not in camel case                camelcase
+   58:29  error  Identifier 'type_date' is not in camel case                  camelcase
+   62:7   error  Identifier 'state_pay' is not in camel case                  camelcase
+   63:29  error  Identifier 'state_pay' is not in camel case                  camelcase
+   65:7   error  Identifier 'state_vaccination' is not in camel case          camelcase
+   66:25  error  Identifier 'state_vaccination' is not in camel case          camelcase
+   90:3   error  Identifier 'surgerie_selected_deleted' is not in camel case  camelcase
+  106:3   error  Identifier 'state_pay' is not in camel case                  camelcase
+  107:3   error  Identifier 'state_vaccination' is not in camel case          camelcase
+  108:3   error  Identifier 'type_date' is not in camel case                  camelcase
+  126:14  error  Refactor the code to avoid using this boolean literal        sonarjs/no-redundant-boolean
+  127:5   error  Identifier 'surgerie_selected_deleted' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\vaccination\add.vue
+    9:3   error  Identifier 'vaccination_date' is not in camel case        camelcase
+   12:3   error  Identifier 'method_payment' is not in camel case          camelcase
+   13:3   error  Identifier 'amount_add' is not in camel case              camelcase
+   16:7   error  Identifier 'method_payments' is not in camel case         camelcase
+   25:7   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   28:7   error  Identifier 'vaccine_names' is not in camel case           camelcase
+   29:7   error  Identifier 'nex_due_date' is not in camel case            camelcase
+   33:14  error  Identifier 'vaccination_date' is not in camel case        camelcase
+   35:3   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   54:14  error  Identifier 'vaccination_date' is not in camel case        camelcase
+   57:14  error  Identifier 'method_payment' is not in camel case          camelcase
+   58:14  error  Identifier 'amount_add' is not in camel case              camelcase
+   59:3   error  Identifier 'select_pet' is not in camel case              camelcase
+   61:3   error  Identifier 'vaccine_names' is not in camel case           camelcase
+   62:3   error  Identifier 'nex_due_date' is not in camel case            camelcase
+   64:3   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   76:10  error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   88:10  error  Identifier 'select_pet' is not in camel case              camelcase
+   94:10  error  Identifier 'vaccine_names' is not in camel case           camelcase
+  100:10  error  Identifier 'nex_due_date' is not in camel case            camelcase
+  132:7   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  132:23  error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  133:7   error  Identifier 'pet_id' is not in camel case                  camelcase
+  133:15  error  Identifier 'select_pet' is not in camel case              camelcase
+  134:7   error  Identifier 'vaccination_date' is not in camel case        camelcase
+  137:7   error  Identifier 'state_pay' is not in camel case               camelcase
+  138:7   error  Identifier 'method_payment' is not in camel case          camelcase
+  140:7   error  Identifier 'selected_segment_times' is not in camel case  camelcase
+  141:7   error  Identifier 'vaccine_names' is not in camel case           camelcase
+  141:22  error  Identifier 'vaccine_names' is not in camel case           camelcase
+  143:7   error  Identifier 'nex_due_date' is not in camel case            camelcase
+  143:21  error  Identifier 'nex_due_date' is not in camel case            camelcase
+  181:7   error  Identifier 'select_pet' is not in camel case              camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\vaccination\edit\[id].vue
+    6:3   error  Identifier 'vaccination_date' is not in camel case        camelcase
+    9:3   error  Identifier 'method_payment' is not in camel case          camelcase
+   10:3   error  Identifier 'amount_add' is not in camel case              camelcase
+   16:7   error  Identifier 'method_payments' is not in camel case         camelcase
+   25:7   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   28:7   error  Identifier 'vaccine_names' is not in camel case           camelcase
+   29:7   error  Identifier 'nex_due_date' is not in camel case            camelcase
+   31:7   error  Identifier 'vaccination_selected' is not in camel case    camelcase
+   35:14  error  Identifier 'vaccination_date' is not in camel case        camelcase
+   62:10  error  Identifier 'select_pet' is not in camel case              camelcase
+   68:10  error  Identifier 'vaccine_names' is not in camel case           camelcase
+   74:10  error  Identifier 'nex_due_date' is not in camel case            camelcase
+   87:7   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   87:23  error  Identifier 'veterinarie_id' is not in camel case          camelcase
+   88:7   error  Identifier 'pet_id' is not in camel case                  camelcase
+   88:15  error  Identifier 'select_pet' is not in camel case              camelcase
+   89:7   error  Identifier 'vaccination_date' is not in camel case        camelcase
+   92:7   error  Identifier 'selected_segment_times' is not in camel case  camelcase
+   93:7   error  Identifier 'vaccine_names' is not in camel case           camelcase
+   93:22  error  Identifier 'vaccine_names' is not in camel case           camelcase
+   95:7   error  Identifier 'nex_due_date' is not in camel case            camelcase
+   95:21  error  Identifier 'nex_due_date' is not in camel case            camelcase
+  138:7   error  Identifier 'select_pet' is not in camel case              camelcase
+  179:5   error  Identifier 'vaccination_selected' is not in camel case    camelcase
+  180:20  error  Identifier 'vaccination_selected' is not in camel case    camelcase
+  181:25  error  Identifier 'vaccination_selected' is not in camel case    camelcase
+  182:19  error  Identifier 'vaccination_selected' is not in camel case    camelcase
+  183:5   error  Identifier 'select_pet' is not in camel case              camelcase
+  183:24  error  Identifier 'vaccination_selected' is not in camel case    camelcase
+  184:5   error  Identifier 'veterinarie_id' is not in camel case          camelcase
+  184:28  error  Identifier 'vaccination_selected' is not in camel case    camelcase
+  185:5   error  Identifier 'vaccine_names' is not in camel case           camelcase
+  185:27  error  Identifier 'vaccination_selected' is not in camel case    camelcase
+  186:21  error  Identifier 'vaccination_selected' is not in camel case    camelcase
+  187:5   error  Identifier 'nex_due_date' is not in camel case            camelcase
+  187:26  error  Identifier 'vaccination_selected' is not in camel case    camelcase
+  188:19  error  Identifier 'vaccination_selected' is not in camel case    camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\vaccination\list.vue
+   10:7   error  Identifier 'vaccination_selected_deleted' is not in camel case  camelcase
+   14:7   error  Identifier 'type_date' is not in camel case                     camelcase
+   15:7   error  Identifier 'state_pay' is not in camel case                     camelcase
+   16:7   error  Identifier 'state_vaccination' is not in camel case             camelcase
+   20:5   error  Identifier 'type_date' is not in camel case                     camelcase
+   20:16  error  Identifier 'type_date' is not in camel case                     camelcase
+   21:5   error  Identifier 'start_date' is not in camel case                    camelcase
+   22:5   error  Identifier 'end_date' is not in camel case                      camelcase
+   23:5   error  Identifier 'state_pay' is not in camel case                     camelcase
+   23:16  error  Identifier 'state_pay' is not in camel case                     camelcase
+   24:12  error  Identifier 'state_vaccination' is not in camel case             camelcase
+   26:5   error  Identifier 'search_pets' is not in camel case                   camelcase
+   27:5   error  Identifier 'search_vets' is not in camel case                   camelcase
+   47:29  error  Identifier 'type_date' is not in camel case                     camelcase
+   51:7   error  Identifier 'state_pay' is not in camel case                     camelcase
+   52:29  error  Identifier 'state_pay' is not in camel case                     camelcase
+   54:7   error  Identifier 'state_vaccination' is not in camel case             camelcase
+   55:25  error  Identifier 'state_vaccination' is not in camel case             camelcase
+   79:3   error  Identifier 'vaccination_selected_deleted' is not in camel case  camelcase
+   95:3   error  Identifier 'state_pay' is not in camel case                     camelcase
+   96:3   error  Identifier 'state_vaccination' is not in camel case             camelcase
+   97:3   error  Identifier 'type_date' is not in camel case                     camelcase
+  115:14  error  Refactor the code to avoid using this boolean literal           sonarjs/no-redundant-boolean
+  116:5   error  Identifier 'vaccination_selected_deleted' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\pages\veterinarie\add.vue
+   12:3   error    Identifier 'type_document' is not in camel case              camelcase
+   13:3   error    Identifier 'n_document' is not in camel case                 camelcase
+   17:3   error    Identifier 'role_id' is not in camel case                    camelcase
+   22:7   error    Identifier 'type_documents' is not in camel case             camelcase
+   34:7   error    Identifier 'hour_days' is not in camel case                  camelcase
+   35:7   error    Identifier 'selected_segment_time' is not in camel case      camelcase
+   36:7   error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+   37:7   error    Identifier 'load_request' is not in camel case               camelcase
+   71:5   error    Identifier 'hour_days' is not in camel case                  camelcase
+   77:39  error    Identifier 'segment_times' is not in camel case              camelcase
+   80:5   error    Identifier 'segment_times' is not in camel case              camelcase
+   80:27  error    Identifier 'segment_time' is not in camel case               camelcase
+   82:19  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+   82:57  error    Identifier 'seg_time' is not in camel case                   camelcase
+   82:69  error    Identifier 'seg_time' is not in camel case                   camelcase
+   82:81  error    Identifier 'segment_time' is not in camel case               camelcase
+   84:9   error    Identifier 'selected_segment_time' is not in camel case      camelcase
+   84:42  error    Identifier 'segment_time' is not in camel case               camelcase
+   89:5   error    Identifier 'segment_times' is not in camel case              camelcase
+   89:27  error    Identifier 'segment_time' is not in camel case               camelcase
+   91:19  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+   91:57  error    Identifier 'seg_time' is not in camel case                   camelcase
+   91:69  error    Identifier 'seg_time' is not in camel case                   camelcase
+   91:81  error    Identifier 'segment_time' is not in camel case               camelcase
+   93:9   error    Identifier 'selected_segment_time' is not in camel case      camelcase
+   99:45  error    Identifier 'segment_times' is not in camel case              camelcase
+  103:7   error    Identifier 'segment_times' is not in camel case              camelcase
+  103:29  error    Identifier 'segment_time' is not in camel case               camelcase
+  105:21  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+  105:59  error    Identifier 'seg_time' is not in camel case                   camelcase
+  105:71  error    Identifier 'seg_time' is not in camel case                   camelcase
+  105:83  error    Identifier 'segment_time' is not in camel case               camelcase
+  107:11  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+  107:44  error    Identifier 'segment_time' is not in camel case               camelcase
+  114:7   error    Identifier 'segment_times' is not in camel case              camelcase
+  114:29  error    Identifier 'segment_time' is not in camel case               camelcase
+  116:21  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+  116:59  error    Identifier 'seg_time' is not in camel case                   camelcase
+  116:71  error    Identifier 'seg_time' is not in camel case                   camelcase
+  116:83  error    Identifier 'segment_time' is not in camel case               camelcase
+  118:11  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+  125:38  error    Identifier 'segment_time' is not in camel case               camelcase
+  128:17  error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  128:59  error    Identifier 'seg_time' is not in camel case                   camelcase
+  128:71  error    Identifier 'seg_time' is not in camel case                   camelcase
+  128:90  error    Identifier 'segment_time' is not in camel case               camelcase
+  130:7   error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  131:9   error    Identifier 'id_seg' is not in camel case                     camelcase
+  131:17  error    Identifier 'segment_time' is not in camel case               camelcase
+  132:9   error    Identifier 'segment_time_id' is not in camel case            camelcase
+  132:26  error    Identifier 'segment_time' is not in camel case               camelcase
+  138:17  error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  138:59  error    Identifier 'seg_time' is not in camel case                   camelcase
+  138:71  error    Identifier 'seg_time' is not in camel case                   camelcase
+  138:90  error    Identifier 'segment_time' is not in camel case               camelcase
+  140:7   error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  151:5   error    Identifier 'type_document' is not in camel case              camelcase
+  152:5   error    Identifier 'n_document' is not in camel case                 camelcase
+  156:5   error    Identifier 'role_id' is not in camel case                    camelcase
+  161:3   error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  162:3   error    Identifier 'selected_segment_time' is not in camel case      camelcase
+  167:7   error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  244:63  error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  246:5   error    Identifier 'load_request' is not in camel case               camelcase
+  258:5   error    Identifier 'load_request' is not in camel case               camelcase
+  486:43  warning  Variable 'index' is already declared in the upper scope      vue/no-template-shadow
+
+C:\laragon\www\admin_veterinaria\src\pages\veterinarie\edit\[id].vue
+    9:3   error    Identifier 'type_document' is not in camel case              camelcase
+   10:3   error    Identifier 'n_document' is not in camel case                 camelcase
+   14:3   error    Identifier 'role_id' is not in camel case                    camelcase
+   19:7   error    Identifier 'type_documents' is not in camel case             camelcase
+   31:7   error    Identifier 'hour_days' is not in camel case                  camelcase
+   32:7   error    Identifier 'selected_segment_time' is not in camel case      camelcase
+   33:7   error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+   34:7   error    Identifier 'load_request' is not in camel case               camelcase
+   37:7   error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+   71:5   error    Identifier 'hour_days' is not in camel case                  camelcase
+   77:39  error    Identifier 'segment_times' is not in camel case              camelcase
+   80:5   error    Identifier 'segment_times' is not in camel case              camelcase
+   80:27  error    Identifier 'segment_time' is not in camel case               camelcase
+   82:19  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+   82:57  error    Identifier 'seg_time' is not in camel case                   camelcase
+   82:69  error    Identifier 'seg_time' is not in camel case                   camelcase
+   82:81  error    Identifier 'segment_time' is not in camel case               camelcase
+   84:9   error    Identifier 'selected_segment_time' is not in camel case      camelcase
+   84:42  error    Identifier 'segment_time' is not in camel case               camelcase
+   89:5   error    Identifier 'segment_times' is not in camel case              camelcase
+   89:27  error    Identifier 'segment_time' is not in camel case               camelcase
+   91:19  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+   91:57  error    Identifier 'seg_time' is not in camel case                   camelcase
+   91:69  error    Identifier 'seg_time' is not in camel case                   camelcase
+   91:81  error    Identifier 'segment_time' is not in camel case               camelcase
+   93:9   error    Identifier 'selected_segment_time' is not in camel case      camelcase
+   99:45  error    Identifier 'segment_times' is not in camel case              camelcase
+  103:7   error    Identifier 'segment_times' is not in camel case              camelcase
+  103:29  error    Identifier 'segment_time' is not in camel case               camelcase
+  105:21  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+  105:59  error    Identifier 'seg_time' is not in camel case                   camelcase
+  105:71  error    Identifier 'seg_time' is not in camel case                   camelcase
+  105:83  error    Identifier 'segment_time' is not in camel case               camelcase
+  107:11  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+  107:44  error    Identifier 'segment_time' is not in camel case               camelcase
+  114:7   error    Identifier 'segment_times' is not in camel case              camelcase
+  114:29  error    Identifier 'segment_time' is not in camel case               camelcase
+  116:21  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+  116:59  error    Identifier 'seg_time' is not in camel case                   camelcase
+  116:71  error    Identifier 'seg_time' is not in camel case                   camelcase
+  116:83  error    Identifier 'segment_time' is not in camel case               camelcase
+  118:11  error    Identifier 'selected_segment_time' is not in camel case      camelcase
+  125:38  error    Identifier 'segment_time' is not in camel case               camelcase
+  128:17  error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  128:59  error    Identifier 'seg_time' is not in camel case                   camelcase
+  128:71  error    Identifier 'seg_time' is not in camel case                   camelcase
+  128:90  error    Identifier 'segment_time' is not in camel case               camelcase
+  130:7   error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  131:9   error    Identifier 'id_seg' is not in camel case                     camelcase
+  131:17  error    Identifier 'segment_time' is not in camel case               camelcase
+  132:9   error    Identifier 'segment_time_id' is not in camel case            camelcase
+  132:26  error    Identifier 'segment_time' is not in camel case               camelcase
+  138:17  error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  138:59  error    Identifier 'seg_time' is not in camel case                   camelcase
+  138:71  error    Identifier 'seg_time' is not in camel case                   camelcase
+  138:90  error    Identifier 'segment_time' is not in camel case               camelcase
+  140:7   error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  147:7   error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  216:63  error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  218:5   error    Identifier 'load_request' is not in camel case               camelcase
+  230:5   error    Identifier 'load_request' is not in camel case               camelcase
+  265:5   error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  266:23  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  267:26  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  268:24  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  269:24  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  270:16  error    Identifier 'type_document' is not in camel case              camelcase
+  270:32  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  271:16  error    Identifier 'n_document' is not in camel case                 camelcase
+  271:29  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  272:25  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  273:27  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  274:30  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  275:16  error    Identifier 'role_id' is not in camel case                    camelcase
+  275:26  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  276:33  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  277:5   error    Identifier 'selected_segment_time' is not in camel case      camelcase
+  277:35  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  278:5   error    Identifier 'schedule_hour_veterinarie' is not in camel case  camelcase
+  278:39  error    Identifier 'veterinarie_selected' is not in camel case       camelcase
+  492:43  warning  Variable 'index' is already declared in the upper scope      vue/no-template-shadow
+
+C:\laragon\www\admin_veterinaria\src\pages\veterinarie\list.vue
+  52:7   error  Identifier 'staff_selected_deleted' is not in camel case  camelcase
+  81:3   error  Identifier 'staff_selected_deleted' is not in camel case  camelcase
+  89:16  error  Refactor the code to avoid using this boolean literal     sonarjs/no-redundant-boolean
+  90:5   error  Identifier 'staff_selected_deleted' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\plugins\1.router\guards.js
+  84:38  error  Refactor the code to avoid using this boolean literal  sonarjs/no-redundant-boolean
+
+C:\laragon\www\admin_veterinaria\src\plugins\calendar\useCalendar.js
+  27:7  error  Identifier 'full_name' is not in camel case  camelcase
+
+C:\laragon\www\admin_veterinaria\src\utils\currencyFormatter.js
+  8:3  error  Identifier 'punto_venta' is not in camel case  camelcase
+  9:3  error  Identifier 'pago_movil' is not in camel case   camelcase
+
+C:\laragon\www\admin_veterinaria\src\views\landing-page\Features.vue
+  3:3  warning  Prop "features" should define at least its type  vue/require-prop-types
+
+C:\laragon\www\admin_veterinaria\src\views\landing-page\Footer.vue
+  45:11  warning  'v-html' directive can lead to XSS attack  vue/no-v-html
+
+✖ 1031 problems (1025 errors, 6 warnings)
+

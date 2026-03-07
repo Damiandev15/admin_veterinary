@@ -17,6 +17,7 @@ const sections = ref([])
 const fetchLandingData = async () => {
   try {
     const resp = await $api('/landing-sections', { method: 'GET' })
+
     sections.value = resp.sections
   } catch (error) {
     console.error('Error fetching landing data:', error)
@@ -29,15 +30,16 @@ const footerData = computed(() => sections.value.find(s => s.section_key === 'fo
 const navbarData = computed(() => sections.value.find(s => s.section_key === 'navbar'))
 
 const featuresData = computed(() => {
-  const feats = sections.value.filter(s => s.section_key.startsWith('feature')).sort((a,b)=>a.order-b.order)
+  const feats = sections.value.filter(s => s.section_key.startsWith('feature')).sort((a, b) => a.order - b.order)
   if (!feats.length) return undefined
   const colors = ['primary', 'success', 'error', 'info']
+
   return feats.map((s, index) => ({
     title: s.title,
     description: s.description,
     icon: s.subtitle || 'ri-star-line',
     color: colors[index % colors.length],
-    image: s.image_url
+    image: s.image_url,
   }))
 })
 
@@ -59,21 +61,45 @@ onMounted(() => {
           <Features :features="featuresData" />
         </section>
 
-        <section class="cta-section py-48 text-center text-white position-relative overflow-hidden"
-          style="min-height: 500px; display: flex; align-items: center;">
+        <section class="cta-section text-center text-white position-relative overflow-hidden responsive-cta">
           <!-- CTA Background Image (Optional) -->
-          <div v-if="ctaData?.image_url" class="position-absolute w-100 h-100" style="top: 0; left: 0; z-index: 0;">
-             <img :src="ctaData.image_url" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2;" />
+          <div
+            v-if="ctaData?.image_url"
+            class="position-absolute w-100 h-100"
+            style="top: 0; left: 0; z-index: 0;"
+          >
+            <img
+              :src="ctaData.image_url"
+              style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2;"
+            >
           </div>
 
-          <div class="max-w-900 mx-auto px-6 position-relative" style="z-index: 1;">
-            <h2 class="text-h2 font-weight-black mb-10" v-html="ctaData?.title || 'Tu Mascota se Sentirá <br class=\'d-none d-md-block\' /> como en Casa'"></h2>
+          <div
+            class="max-w-900 mx-auto px-6 position-relative"
+            style="z-index: 1;"
+          >
+            >
+            <!-- eslint-disable vue/no-v-html -->
+            <h2
+              class="text-h2 font-weight-black mb-10"
+              v-html="ctaData?.title || `Tu Mascota se Sentir\u00e1 <br class='d-none d-md-block' /> como en Casa`"
+            />
+            <!-- eslint-enable vue/no-v-html -->
             <p class="text-h5 mb-12 opacity-80 font-weight-light">
               {{ ctaData?.description || 'Únete a las miles de familias que confían en nuestra atención especializada y humana.' }}
             </p>
-            <div class="animate-up" style="transition-delay: 0.3s">
-              <VBtn size="x-large" color="white" rounded="pill" href="/cliente/register"
-                class="cta-main-btn font-weight-black px-12 h-auto py-6" elevation="20">
+            <div
+              class="animate-up"
+              style="transition-delay: 0.3s"
+            >
+              <VBtn
+                size="x-large"
+                color="white"
+                rounded="pill"
+                href="/cliente/register"
+                class="cta-main-btn font-weight-black px-6 px-md-12 h-auto py-4 py-md-6"
+                elevation="20"
+              >
                 REGISTRAR MI MASCOTA
               </VBtn>
             </div>
@@ -116,9 +142,36 @@ onMounted(() => {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.responsive-cta {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
 @media (max-width: 960px) {
   .text-h2 {
     font-size: 2.5rem !important;
+  }
+
+  .responsive-cta {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-h2 {
+    font-size: 2rem !important;
+  }
+
+  .cta-main-btn {
+    font-size: 1rem !important;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .responsive-cta {
+    min-height: 350px;
   }
 }
 </style>

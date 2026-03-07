@@ -3,101 +3,102 @@ import appleIphone from '@images/cards/apple-iphone-x-lg.png'
 import appleWatch from '@images/cards/apple-watch-green-lg.png'
 import ps4Joystick from '@images/cards/ps4-joystick-lg.png'
 
-const websiteAnalytics = ref([]);
+const websiteAnalytics = ref([])
 
 const ReportForService = async() => {
   try {
-    const resp =  await $api('/kpi_report_for_servicies',{
-        method: 'POST',
-        body:{},
-        onResponseError({response}){
-            console.log(response);
-        }
+    const resp =  await $api('/kpi_report_for_servicies', {
+      method: 'POST',
+      body: {},
+      onResponseError({ response }){
+        console.log(response)
+      },
     })
-    console.log(resp);
+
+    console.log(resp)
 
     websiteAnalytics.value = [
-        {
-          name: 'Citas Medicas',
-          slideImg: 'https://cdn-icons-png.flaticon.com/512/5389/5389424.png',
-          income_bruto: resp.bruto_income_appoinments,
-          variation_percentage: resp.VPAppointments,
-          data: [
-            {
-              number: resp.n_appointments_total,
-              text: 'N° programados',
-            },
-            {
-              number: resp.n_appointments_pending,
-              text: 'N° pendientes',
-            },
-            {
-              number: resp.n_appointments_attend,
-              text: 'N° atendidos',
-            },
-            {
-              number: resp.n_appointments_cancel,
-              text: 'N° cancelados',
-            },
-          ],
-        },
-        {
-          name: 'Vacunas',
-          slideImg: 'https://cdn-icons-png.flaticon.com/512/2867/2867078.png',
-          income_bruto: resp.bruto_income_vaccinations,
-          variation_percentage: resp.VPVaccinations,
-          data: [
-            {
-              number: resp.n_vaccinations_total,
-              text: 'N° programados',
-            },
-            {
-              number: resp.n_vaccinations_pending,
-              text: 'N° pendientes',
-            },
-            {
-              number: resp.n_vaccinations_attend,
-              text: 'N° atendidos',
-            },
-            {
-              number: resp.n_vaccinations_cancel,
-              text: 'N° cancelados',
-            },
-          ],
-        },
-        {
-          name: 'Cirujías',
-          slideImg: 'https://cdn-icons-png.flaticon.com/512/4787/4787134.png',
-          income_bruto: resp.bruto_income_surgeries,
-          variation_percentage: resp.VPsurgeries,
-          data: [
-            {
-              number: resp.n_surgeries_total,
-              text: 'N° programados',
-            },
-            {
-              number: resp.n_surgeries_pending,
-              text: 'N° pendientes',
-            },
-            {
-              number: resp.n_surgeries_attend,
-              text: 'N° atendidos',
-            },
-            {
-              number: resp.n_surgeries_cancel,
-              text: 'N° cancelados',
-            },
-          ],
-        },
-    ];
+      {
+        name: 'Citas Medicas',
+        slideImg: 'https://cdn-icons-png.flaticon.com/512/5389/5389424.png',
+        income_bruto: resp.bruto_income_appoinments,
+        variation_percentage: resp.VPAppointments,
+        data: [
+          {
+            number: resp.n_appointments_total,
+            text: 'N° programados',
+          },
+          {
+            number: resp.n_appointments_pending,
+            text: 'N° pendientes',
+          },
+          {
+            number: resp.n_appointments_attend,
+            text: 'N° atendidos',
+          },
+          {
+            number: resp.n_appointments_cancel,
+            text: 'N° cancelados',
+          },
+        ],
+      },
+      {
+        name: 'Vacunas',
+        slideImg: 'https://cdn-icons-png.flaticon.com/512/2867/2867078.png',
+        income_bruto: resp.bruto_income_vaccinations,
+        variation_percentage: resp.VPVaccinations,
+        data: [
+          {
+            number: resp.n_vaccinations_total,
+            text: 'N° programados',
+          },
+          {
+            number: resp.n_vaccinations_pending,
+            text: 'N° pendientes',
+          },
+          {
+            number: resp.n_vaccinations_attend,
+            text: 'N° atendidos',
+          },
+          {
+            number: resp.n_vaccinations_cancel,
+            text: 'N° cancelados',
+          },
+        ],
+      },
+      {
+        name: 'Cirujías',
+        slideImg: 'https://cdn-icons-png.flaticon.com/512/4787/4787134.png',
+        income_bruto: resp.bruto_income_surgeries,
+        variation_percentage: resp.VPsurgeries,
+        data: [
+          {
+            number: resp.n_surgeries_total,
+            text: 'N° programados',
+          },
+          {
+            number: resp.n_surgeries_pending,
+            text: 'N° pendientes',
+          },
+          {
+            number: resp.n_surgeries_attend,
+            text: 'N° atendidos',
+          },
+          {
+            number: resp.n_surgeries_cancel,
+            text: 'N° cancelados',
+          },
+        ],
+      },
+    ]
 
   } catch (error) {
-    console.log(error);
+    console.log(error)
   }
 }
 
 onMounted(() => {
-  ReportForService();
+  ReportForService()
 })
 </script>
 
@@ -118,20 +119,26 @@ onMounted(() => {
       >
         <VCardItem>
           <VCardTitle class="text-white">
-           {{ item.name }}
+            {{ item.name }}
           </VCardTitle>
           <VCardSubtitle class="text-white">
             Total Bruto: {{ item.income_bruto }} BS
 
-            <div class="d-inline-block text-success font-weight-medium" v-if="item.variation_percentage >= 0">
+            <div
+              v-if="item.variation_percentage >= 0"
+              class="d-inline-block text-success font-weight-medium"
+            >
               <div class="d-flex align-center">
-                +{{item.variation_percentage}}%
+                +{{ item.variation_percentage }}%
                 <VIcon icon="ri-arrow-up-s-line" />
               </div>
             </div>
-            <div class="d-inline-block text-error font-weight-medium" v-if="item.variation_percentage < 0">
+            <div
+              v-if="item.variation_percentage < 0"
+              class="d-inline-block text-error font-weight-medium"
+            >
               <div class="d-flex align-center">
-                {{item.variation_percentage}}%
+                {{ item.variation_percentage }}%
                 <VIcon icon="ri-arrow-up-s-line" />
               </div>
             </div>

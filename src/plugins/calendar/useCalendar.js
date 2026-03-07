@@ -24,7 +24,7 @@ export const blankEvent = {
       name: '',
     },
     veterinarie: {
-      full_name: ''
+      full_name: '',
     },
     state: 1,
     notes: '',
@@ -35,6 +35,7 @@ const date = new Date()
 const nextDay = new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
 const nextMonth = date.getMonth() === 11 ? new Date(date.getFullYear() + 1, 0, 1) : new Date(date.getFullYear(), date.getMonth() + 1, 1)
 const prevMonth = date.getMonth() === 11 ? new Date(date.getFullYear() - 1, 0, 1) : new Date(date.getFullYear(), date.getMonth() - 1, 1)
+
 // start: '2024-07-11T18:50:00',
 // end: '2024-07-15T18:50:00',
 export const events = [
@@ -65,8 +66,8 @@ export const events = [
     url: '',
     title: 'Family Trip',
     allDay: true,
-    start: new Date('2024-11-21 10:00:00'),//date.getFullYear(), date.getMonth() + 1, -9
-    end: new Date('2024-11-21 10:15:00'),//date.getFullYear(), date.getMonth() + 1, -7
+    start: new Date('2024-11-21 10:00:00'), //date.getFullYear(), date.getMonth() + 1, -9
+    end: new Date('2024-11-21 10:15:00'), //date.getFullYear(), date.getMonth() + 1, -7
     extendedProps: {
       calendar: 'Holiday',
     },
@@ -148,7 +149,7 @@ export const events = [
       calendar: 'Personal',
     },
   },
-];
+]
 export const useCalendar = (event, isEventHandlerSidebarActive, isLeftSidebarOpen) => {
   const configStore = useConfigStore()
 
@@ -190,7 +191,7 @@ export const useCalendar = (event, isEventHandlerSidebarActive, isLeftSidebarOpe
         state,
         notes,
         day,
-        amount
+        amount,
       },
       allDay,
     }
@@ -206,7 +207,8 @@ export const useCalendar = (event, isEventHandlerSidebarActive, isLeftSidebarOpe
     if (!info)
       return
 
-    console.log(events);
+    console.log(events)
+
     // successCallback(events.map(e => ({
     //   ...e,
 
@@ -298,7 +300,8 @@ export const useCalendar = (event, isEventHandlerSidebarActive, isLeftSidebarOpe
       .then(r => {
         const propsToUpdate = ['id', 'title', 'url']
         const extendedPropsToUpdate = ['calendar', 'guests', 'location', 'description']
-        console.log(r);
+
+        console.log(r)
         updateEventInCalendar(r.event, propsToUpdate, extendedPropsToUpdate)
       })
     refetchEvents()
@@ -365,14 +368,14 @@ export const useCalendar = (event, isEventHandlerSidebarActive, isLeftSidebarOpe
     eventTimeFormat: { // like '14:30'
       hour: '2-digit',
       minute: '2-digit',
-      meridiem: 'short'
+      meridiem: 'short',
     },
     eventContent: function (arg) {
       return {
         html: `<div style="font-size: 1.1em; padding: 2px; display: flex; align-items: center; background-color: transparent !important; box-shadow: none !important; border: none !important;">
                  <div style="font-weight: bold; margin-right: 5px;">${arg.timeText}</div>
                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${arg.event.title}</div>
-               </div>`
+               </div>`,
       }
     },
     eventClick({ event: clickedEvent, jsEvent }) {
